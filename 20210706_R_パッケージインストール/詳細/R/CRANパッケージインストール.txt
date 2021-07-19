@@ -1,0 +1,32 @@
+CRANパッケージインストール
+
+[root@localhost ~]# /usr/local/pkg/R/4.1.0_1/bin/R
+
+R version 4.1.0 (2021-05-18) -- "Camp Pontanezen"
+Copyright (C) 2021 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R は、自由なソフトウェアであり、「完全に無保証」です。 
+一定の条件に従えば、自由にこれを再配布することができます。 
+配布条件の詳細に関しては、'license()' あるいは 'licence()' と入力してください。 
+
+R は多くの貢献者による共同プロジェクトです。 
+詳しくは 'contributors()' と入力してください。 
+また、R や R のパッケージを出版物で引用する際の形式については 
+'citation()' と入力してください。 
+
+'demo()' と入力すればデモをみることができます。 
+'help()' とすればオンラインヘルプが出ます。 
+'help.start()' で HTML ブラウザによるヘルプがみられます。 
+'q()' と入力すれば R を終了します。 
+
+> packs <- available.packages(contriburl=contrib.url("http://cran.ism.ac.jp/"))
+> install.packages(packs[,1],contriburl=contrib.url("http://cran.ism.ac.jp/"))
+
+
+※
+何らかの具合で、インストールしようとしているパッケージ（のファイル）がないといわれて、
+インストール全体が中止されてしまうことがあるので、以下のようにした。
+
+packs　<-　available.packages(contriburl=contrib.url("http://cran.ism.ac.jp/"))
+junk <- sapply(packs[,1], function(l) try(install.packages(l,lib='C:/Users/foo/Documents/R/win-library/2.10',contriburl=contrib.url("http://cran.ism.ac.jp/"))))

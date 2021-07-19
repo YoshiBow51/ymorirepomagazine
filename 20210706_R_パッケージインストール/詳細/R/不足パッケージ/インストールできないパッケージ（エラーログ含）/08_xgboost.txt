@@ -1,0 +1,147 @@
+[root@localhost ~]# source .bash_profile
+[root@localhost ~]# /usr/local/pkg/R/4.1.0_1/bin/R
+
+R version 4.1.0 (2021-05-18) -- "Camp Pontanezen"
+Copyright (C) 2021 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R は、自由なソフトウェアであり、「完全に無保証」です。 
+一定の条件に従えば、自由にこれを再配布することができます。 
+配布条件の詳細に関しては、'license()' あるいは 'licence()' と入力してください。 
+
+R は多くの貢献者による共同プロジェクトです。 
+詳しくは 'contributors()' と入力してください。 
+また、R や R のパッケージを出版物で引用する際の形式については 
+'citation()' と入力してください。 
+
+'demo()' と入力すればデモをみることができます。 
+'help()' とすればオンラインヘルプが出ます。 
+'help.start()' で HTML ブラウザによるヘルプがみられます。 
+'q()' と入力すれば R を終了します。 
+
+ [以前にセーブされたワークスペースを復帰します] 
+
+> install.packages("xgboost")
+ --- このセッションで使うために、CRAN のミラーサイトを選んでください --- 
+Secure CRAN mirrors 
+
+ 1: 0-Cloud [https]
+ 2: Australia (Canberra) [https]
+ 3: Australia (Melbourne 1) [https]
+ 4: Australia (Melbourne 2) [https]
+ 5: Australia (Perth) [https]
+ 6: Austria [https]
+ 7: Belgium (Brussels) [https]
+ 8: Brazil (BA) [https]
+ 9: Brazil (PR) [https]
+10: Brazil (RJ) [https]
+11: Brazil (SP 1) [https]
+12: Brazil (SP 2) [https]
+13: Bulgaria [https]
+14: Canada (MB) [https]
+15: Canada (ON 2) [https]
+16: Chile (Santiago) [https]
+17: China (Beijing 2) [https]
+18: China (Hefei) [https]
+19: China (Hong Kong) [https]
+20: China (Guangzhou) [https]
+21: China (Lanzhou) [https]
+22: China (Nanjing) [https]
+23: China (Shanghai 1) [https]
+24: China (Shanghai 2) [https]
+25: China (Shenzhen) [https]
+26: Costa Rica [https]
+27: Czech Republic [https]
+28: Denmark [https]
+29: East Asia [https]
+30: Ecuador (Cuenca) [https]
+31: Ecuador (Quito) [https]
+32: Estonia [https]
+33: France (Lyon 1) [https]
+34: France (Lyon 2) [https]
+35: France (Marseille) [https]
+36: France (Montpellier) [https]
+37: France (Paris 1) [https]
+38: Germany (Erlangen) [https]
+39: Germany (Leipzig) [https]
+40: Germany (Göttingen) [https]
+41: Germany (Münster) [https]
+42: Germany (Regensburg) [https]
+43: Greece [https]
+44: Hungary [https]
+45: Iceland [https]
+46: India [https]
+47: Indonesia (Jakarta) [https]
+48: Iran [https]
+49: Italy (Milano) [https]
+50: Italy (Padua) [https]
+51: Japan (Tokyo) [https]
+52: Korea (Gyeongsan-si) [https]
+53: Korea (Seoul 1) [https]
+54: Korea (Ulsan) [https]
+55: Malaysia [https]
+56: Mexico (Mexico City) [https]
+57: Mexico (Texcoco) [https]
+58: Morocco [https]
+59: Netherlands [https]
+60: New Zealand [https]
+61: Norway [https]
+62: Philippines [https]
+63: Russia (Moscow) [https]
+64: South Africa (Johannesburg) [https]
+65: Spain (A Coruña) [https]
+66: Spain (Madrid) [https]
+67: Sweden (Borås) [https]
+68: Sweden (Umeå) [https]
+69: Switzerland [https]
+70: Taiwan (Taipei) [https]
+71: Turkey (Denizli) [https]
+72: Turkey (Istanbul) [https]
+73: Turkey (Mersin) [https]
+74: UK (Bristol) [https]
+75: UK (London 1) [https]
+76: USA (IA) [https]
+77: USA (KS) [https]
+78: USA (MI) [https]
+79: USA (OH) [https]
+80: USA (OR) [https]
+81: USA (TN) [https]
+82: USA (TX 1) [https]
+83: Uruguay [https]
+84: (other mirrors)
+
+Selection: 51
+ URL 'https://cran.ism.ac.jp/src/contrib/xgboost_1.4.1.1.tar.gz' を試しています 
+Content type 'application/x-gzip' length 988320 bytes (965 KB)
+==================================================
+downloaded 965 KB
+
+* installing *source* package ‘xgboost’ ...
+** package ‘xgboost’ successfully unpacked and MD5 sums checked
+** using staged installation
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking Backtrace lib... 
+checking for backtrace in -lexecinfo... no
+checking endian... 
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+ エラー: C++14 standard requested but CXX14 is not defined
+* removing ‘/usr/local/pkg/R/4.1.0_1/lib64/R/library/xgboost’
+
+The downloaded source packages are in
+	‘/tmp/RtmpzFU7fo/downloaded_packages’
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+ 警告メッセージ: 
+ install.packages("xgboost") で: 
+  installation of package ‘xgboost’ had non-zero exit status
+> 

@@ -1,0 +1,164 @@
+BiocManager, 
+https://cran.r-project.org/web/packages/BiocManager/index.html
+command )
+install.packages("BiocManager", dependencies = TRUE)
+
+CCA, 
+https://cran.r-project.org/web/packages/CCA/index.html
+command )
+install.packages("CCA", dependencies = TRUE)
+
+CMplot, 
+https://cran.r-project.org/web/packages/CMplot/index.html
+command )
+install.packages("CMplot", dependencies = TRUE)
+
+GGally, 
+https://cran.r-project.org/web/packages/GGally/index.html
+command )
+install.packages("GGally", dependencies = TRUE)
+
+GPArotation, 
+https://cran.r-project.org/web/packages/GPArotation/index.html
+command )
+install.packages("GPArotation", dependencies = TRUE)
+
+RColorBrewer, 
+https://cran.r-project.org/web/packages/RColorBrewer/index.html
+command )
+install.packages("RColorBrewer", dependencies = TRUE)
+
+RGCCA, 
+https://cran.r-project.org/web/packages/RGCCA/index.html
+command )
+install.packages("RGCCA", dependencies = TRUE)
+
+SNPRelate, ★Bc
+https://www.bioconductor.org/packages/release/bioc/html/SNPRelate.html
+command )
+install.packages("RGCCA", dependencies = TRUE)
+
+SNPassoc,
+https://cran.r-project.org/web/packages/SNPassoc/index.html
+
+bestNormalize, 
+https://cran.r-project.org/web/packages/bestNormalize/index.html
+
+car, 
+https://cran.r-project.org/web/packages/car/index.html
+
+caret, 
+https://cran.r-project.org/web/packages/caret/index.html
+
+corrplot,
+https://cran.r-project.org/web/packages/corrplot/index.html
+ 
+devtools, 
+https://cran.r-project.org/web/packages/devtools/index.html
+
+doParallel, 
+https://cran.r-project.org/web/packages/doParallel/index.html
+
+dplyr, 
+https://cran.r-project.org/web/packages/dplyr/index.html
+
+ggbiplot, ★GitHub
+https://github.com/vqv/ggbiplot
+https://www.karada-good.net/analyticsr/r-534
+
+ggparty,
+https://cran.r-project.org/web/packages/ggparty/index.html
+
+ggplot2, 
+https://cran.r-project.org/web/packages/ggplot2/index.html
+
+ggpubr, 
+https://cran.r-project.org/web/packages/ggpubr/index.html
+
+ggrepel, 
+https://cran.r-project.org/web/packages/ggrepel/index.html
+
+gplots, 
+https://cran.r-project.org/web/packages/gplots/index.html
+
+kernlab, 
+https://cran.r-project.org/web/packages/kernlab/index.html
+
+lavaan, 
+https://cran.r-project.org/web/packages/lavaan/index.html
+
+lightgbm, 
+https://cran.r-project.org/web/packages/lightgbm/index.html
+
+multcomp, 
+https://cran.r-project.org/web/packages/multcomp/index.html
+
+nFactors, 
+https://cran.r-project.org/web/packages/nFactors/index.html
+
+pROC,
+https://cran.r-project.org/web/packages/pROC/index.html
+
+partykit, 
+https://cran.r-project.org/web/packages/partykit/index.html
+
+patchwork, 
+https://cran.r-project.org/web/packages/patchwork/index.html
+
+pls, 
+https://cran.r-project.org/web/packages/pls/index.html
+
+psych, 
+https://cran.r-project.org/web/packages/psych/index.html
+
+qqman, 
+https://cran.r-project.org/web/packages/qqman/index.html
+
+randomForest, 
+https://cran.r-project.org/web/packages/randomForest/index.html
+
+rpart, 
+https://cran.r-project.org/web/packages/rpart/index.html
+
+rstatix, 
+https://cran.r-project.org/web/packages/rstatix/index.html
+
+semPlot, 
+https://cran.r-project.org/web/packages/semPlot/index.html
+
+semTools,
+https://cran.r-project.org/web/packages/semTools/index.html
+
+tictoc, 
+https://cran.r-project.org/web/packages/tictoc/index.html
+
+tidyverse, 
+https://cran.r-project.org/web/packages/tidyverse/index.html
+
+xgboost, 
+https://cran.r-project.org/web/packages/xgboost/index.html
+
+xlsx 
+https://cran.r-project.org/web/packages/xlsx/index.html
+
+計 42 個
+
+
+
+▽一個一個インストール
+
+https://stats.biopapyrus.jp/r/basic/package.html
+
+ex)
+install.packages("BiocManager", dependencies = TRUE)
+
+▽追加パッケージをなんでもかんでも追加する
+http://www.okadajp.org/RWiki/?%E8%BF%BD%E5%8A%A0%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%82%92%E3%81%AA%E3%82%93%E3%81%A7%E3%82%82%E3%81%8B%E3%82%93%E3%81%A7%E3%82%82%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B
+※筑波大学の国内ミラーは死んでるので以下参照で要変更
+https://staffblog.amelieff.jp/entry/2018/04/19/152233
+
+## 1. CRANから一覧を入手
+packs <- available.packages(contriburl=contrib.url("http://cran.ism.ac.jp/"))
+
+# 2. 一覧をもとにダウンロードとインストール
+install.packages(packs[,1],contriburl=contrib.url("http://cran.ism.ac.jp/"))

@@ -1,0 +1,221 @@
+> install.packages("semPlot")
+ 依存対象 (dependency) ‘latticeExtra’, ‘arm’, ‘Hmisc’, ‘jpeg’, ‘png’, ‘mi’, ‘rpf’, ‘qgraph’, ‘sem’, ‘XML’, ‘OpenMx’ もインストールします 
+
+ URL 'https://cran.ism.ac.jp/src/contrib/latticeExtra_0.6-29.tar.gz' を試しています 
+Content type 'application/x-gzip' length 1292315 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+ URL 'https://cran.ism.ac.jp/src/contrib/arm_1.11-2.tar.gz' を試しています 
+Content type 'application/x-gzip' length 79464 bytes (77 KB)
+==================================================
+downloaded 77 KB
+
+ URL 'https://cran.ism.ac.jp/src/contrib/Hmisc_4.5-0.tar.gz' を試しています 
+Content type 'application/x-gzip' length 775444 bytes (757 KB)
+==================================================
+downloaded 757 KB
+
+ URL 'https://cran.ism.ac.jp/src/contrib/jpeg_0.1-8.1.tar.gz' を試しています 
+Content type 'application/x-gzip' length 18116 bytes (17 KB)
+==================================================
+downloaded 17 KB
+
+ URL 'https://cran.ism.ac.jp/src/contrib/png_0.1-7.tar.gz' を試しています 
+Content type 'application/x-gzip' length 24990 bytes (24 KB)
+==================================================
+downloaded 24 KB
+
+ URL 'https://cran.ism.ac.jp/src/contrib/mi_1.0.tar.gz' を試しています 
+Content type 'application/x-gzip' length 793313 bytes (774 KB)
+==================================================
+downloaded 774 KB
+
+ URL 'https://cran.ism.ac.jp/src/contrib/rpf_1.0.7.tar.gz' を試しています 
+Content type 'application/x-gzip' length 706022 bytes (689 KB)
+==================================================
+downloaded 689 KB
+
+ URL 'https://cran.ism.ac.jp/src/contrib/qgraph_1.6.9.tar.gz' を試しています 
+Content type 'application/x-gzip' length 230018 bytes (224 KB)
+==================================================
+downloaded 224 KB
+
+ URL 'https://cran.ism.ac.jp/src/contrib/sem_3.1-11.tar.gz' を試しています 
+Content type 'application/x-gzip' length 164058 bytes (160 KB)
+==================================================
+downloaded 160 KB
+
+ URL 'https://cran.ism.ac.jp/src/contrib/XML_3.99-0.6.tar.gz' を試しています 
+Content type 'application/x-gzip' length 968773 bytes (946 KB)
+==================================================
+downloaded 946 KB
+
+ URL 'https://cran.ism.ac.jp/src/contrib/OpenMx_2.19.6.tar.gz' を試しています 
+Content type 'application/x-gzip' length 4425058 bytes (4.2 MB)
+==================================================
+downloaded 4.2 MB
+
+ URL 'https://cran.ism.ac.jp/src/contrib/semPlot_1.1.2.tar.gz' を試しています 
+Content type 'application/x-gzip' length 75138 bytes (73 KB)
+==================================================
+downloaded 73 KB
+
+* installing *source* package ‘jpeg’ ...
+** package ‘jpeg’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG   -I/usr/local/include   -fpic  -g -O2  -c read.c -o read.o
+In file included from read.c:1:0:
+rjcommon.h:11:21: 致命的エラー: jpeglib.h: そのようなファイルやディレクトリはありません
+ #include <jpeglib.h>
+                     ^
+コンパイルを停止しました。
+make: *** [read.o] エラー 1
+ERROR: compilation failed for package ‘jpeg’
+* removing ‘/usr/local/pkg/R/4.1.0_1/lib64/R/library/jpeg’
+* installing *source* package ‘png’ ...
+** package ‘png’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG   -I/usr/local/include   `libpng-config --cflags` -fpic  -g -O2  -c read.c -o read.o
+/bin/sh: libpng-config: コマンドが見つかりません
+read.c:3:17: 致命的エラー: png.h: そのようなファイルやディレクトリはありません
+ #include <png.h>
+                 ^
+コンパイルを停止しました。
+make: *** [read.o] エラー 1
+ERROR: compilation failed for package ‘png’
+* removing ‘/usr/local/pkg/R/4.1.0_1/lib64/R/library/png’
+* installing *source* package ‘rpf’ ...
+** package ‘rpf’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+ エラー: C++14 standard requested but CXX14 is not defined
+* removing ‘/usr/local/pkg/R/4.1.0_1/lib64/R/library/rpf’
+* installing *source* package ‘XML’ ...
+** package ‘XML’ successfully unpacked and MD5 sums checked
+** using staged installation
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for sed... /usr/bin/sed
+checking for pkg-config... /usr/bin/pkg-config
+checking for xml2-config... /usr/bin/xml2-config
+USE_XML2 = yes
+SED_EXTENDED_ARG: -E
+Minor 9, Patch 1 for 2.9.1
+Located parser file -I/usr/include/libxml2/parser.h
+Checking for 1.8:  -I/usr/include/libxml2
+Using libxml2.*
+checking for gzopen in -lz... yes
+checking for xmlParseFile in -lxml2... yes
+checking for xmlHashSize in -lxml2... yes
+Using built-in xmlHashSize
+Checking DTD parsing (presence of externalSubset)...
+checking for xmlHashSize in -lxml2... yes
+Found xmlHashSize
+checking for xmlOutputBufferCreateBuffer in -lxml2... yes
+have xmlOutputBufferCreateBuffer()
+checking for xmlDocDumpFormatMemoryEnc in -lxml2... yes
+checking libxml/xmlversion.h usability... yes
+checking libxml/xmlversion.h presence... yes
+checking for libxml/xmlversion.h... yes
+Expat:  FALSE
+Checking for return type of xmlHashScan element routine.
+No return value for xmlHashScan
+xmlNs has a context field
+Checking for cetype_t enumeration
+Using recent version of R with cetype_t enumeration type for encoding
+checking for xmlsec1-config... no
+nodegc default 
+xml-debug default 
+Version has XML_WITH_ZLIB
+Version has xmlHasFeature()
+
+****************************************
+Configuration information:
+
+Libxml settings
+
+libxml include directory: -I/usr/include/libxml2
+libxml library directory: -lxml2 -lz -lm -ldl -lz  -lxml2
+libxml 2:                 -DLIBXML2=1
+
+Compilation flags:         -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1 
+Link flags:               -lxml2 -lz -lm -ldl -lz  -lxml2
+
+****************************************
+configure: creating ./config.status
+config.status: creating src/Makevars
+config.status: creating R/supports.R
+config.status: creating inst/scripts/RSXML.csh
+config.status: creating inst/scripts/RSXML.bsh
+** libs
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1  -I/usr/local/include   -fpic  -g -O2  -c DocParse.c -o DocParse.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1  -I/usr/local/include   -fpic  -g -O2  -c EventParse.c -o EventParse.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1  -I/usr/local/include   -fpic  -g -O2  -c ExpatParse.c -o ExpatParse.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1  -I/usr/local/include   -fpic  -g -O2  -c HTMLParse.c -o HTMLParse.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1  -I/usr/local/include   -fpic  -g -O2  -c NodeGC.c -o NodeGC.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1  -I/usr/local/include   -fpic  -g -O2  -c RSDTD.c -o RSDTD.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1  -I/usr/local/include   -fpic  -g -O2  -c RUtils.c -o RUtils.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1  -I/usr/local/include   -fpic  -g -O2  -c Rcatalog.c -o Rcatalog.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1  -I/usr/local/include   -fpic  -g -O2  -c Utils.c -o Utils.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1  -I/usr/local/include   -fpic  -g -O2  -c XMLEventParse.c -o XMLEventParse.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1  -I/usr/local/include   -fpic  -g -O2  -c XMLHashTree.c -o XMLHashTree.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1  -I/usr/local/include   -fpic  -g -O2  -c XMLTree.c -o XMLTree.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1  -I/usr/local/include   -fpic  -g -O2  -c fixNS.c -o fixNS.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1  -I/usr/local/include   -fpic  -g -O2  -c libxmlFeatures.c -o libxmlFeatures.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1  -I/usr/local/include   -fpic  -g -O2  -c schema.c -o schema.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1  -I/usr/local/include   -fpic  -g -O2  -c xmlsecurity.c -o xmlsecurity.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DLIBXML -I/usr/include/libxml2 -DUSE_EXTERNAL_SUBSET=1 -DROOT_HAS_DTD_NODE=1 -DDUMP_WITH_ENCODING=1 -DUSE_XML_VERSION_H=1 -DXML_ELEMENT_ETYPE=1 -DXML_ATTRIBUTE_ATYPE=1 -DNO_XML_HASH_SCANNER_RETURN=1 -DLIBXML_NAMESPACE_HAS_CONTEXT=1 -DHAVE_R_CETYPE_T=1 -DHAVE_XML_WITH_ZLIB=1 -DHAVE_XML_HAS_FEATURE=1 -DUSE_R=1 -D_R_=1  -DHAVE_VALIDITY=1 -DXML_REF_COUNT_NODES=1  -I. -DLIBXML2=1  -I/usr/local/include   -fpic  -g -O2  -c xpath.c -o xpath.o
+gcc -std=gnu99 -shared -L/usr/local/lib64 -o XML.so DocParse.o EventParse.o ExpatParse.o HTMLParse.o NodeGC.o RSDTD.o RUtils.o Rcatalog.o Utils.o XMLEventParse.o XMLHashTree.o XMLTree.o fixNS.o libxmlFeatures.o schema.o xmlsecurity.o xpath.o -lxml2 -lz -lm -ldl -lz -lxml2
+installing to /usr/local/pkg/R/4.1.0_1/lib64/R/library/00LOCK-XML/00new/XML/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Creating a generic function for ‘source’ from package ‘base’ in package ‘XML’
+in method for ‘xmlAttrsToDataFrame’ with signature ‘"AsIs"’:  クラス “AsIs” に対する定義はありません 
+in method for ‘readKeyValueDB’ with signature ‘"AsIs"’:  クラス “AsIs” に対する定義はありません 
+in method for ‘readSolrDoc’ with signature ‘"AsIs"’:  クラス “AsIs” に対する定義はありません 
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (XML)
+ERROR: dependencies ‘png’, ‘jpeg’ are not available for package ‘latticeExtra’
+* removing ‘/usr/local/pkg/R/4.1.0_1/lib64/R/library/latticeExtra’
+ERROR: dependency ‘rpf’ is not available for package ‘OpenMx’
+* removing ‘/usr/local/pkg/R/4.1.0_1/lib64/R/library/OpenMx’
+ERROR: dependency ‘latticeExtra’ is not available for package ‘Hmisc’
+* removing ‘/usr/local/pkg/R/4.1.0_1/lib64/R/library/Hmisc’
+ERROR: dependency ‘Hmisc’ is not available for package ‘arm’
+* removing ‘/usr/local/pkg/R/4.1.0_1/lib64/R/library/arm’
+ERROR: dependencies ‘Hmisc’, ‘jpeg’, ‘png’ are not available for package ‘qgraph’
+* removing ‘/usr/local/pkg/R/4.1.0_1/lib64/R/library/qgraph’
+ERROR: dependency ‘arm’ is not available for package ‘mi’
+* removing ‘/usr/local/pkg/R/4.1.0_1/lib64/R/library/mi’
+ERROR: dependency ‘mi’ is not available for package ‘sem’
+* removing ‘/usr/local/pkg/R/4.1.0_1/lib64/R/library/sem’
+ERROR: dependencies ‘qgraph’, ‘sem’, ‘OpenMx’ are not available for package ‘semPlot’
+* removing ‘/usr/local/pkg/R/4.1.0_1/lib64/R/library/semPlot’
+
+The downloaded source packages are in
+	‘/tmp/RtmpAIOMq2/downloaded_packages’
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+ 11 件の警告がありました (警告を見るには warnings() を使って下さい) 
+> packageVersion("semPlot")
+ packageVersion("semPlot") でエラー: 
+   ‘semPlot’ という名前のパッケージはありません 
+> 

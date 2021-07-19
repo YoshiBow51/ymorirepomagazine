@@ -1,0 +1,730 @@
+01_依存関係・必要なミドルウェアインストール
+
+[root@localhost ~]# export http_proxy="http://172.30.2.10:8080"
+[root@localhost ~]# export https_proxy="http://172.30.2.10:8080"
+[root@localhost ~]# 
+[root@localhost ~]# yum install wget gcc gcc-c++ gcc-gfortran glibc-headers bzip2 bzip2-devel java-1.8.0-openjdk java-1.8.0-openjdk-devel libcurl-devel libgit2-devel libgfortran libXt-devel libxml2-devel openssl-devel pcre pcre-devel pcre2-devel readline-devel xz xz-devel zlib-devel -y
+読み込んだプラグイン:fastestmirror, langpacks
+base                                                                                                              | 3.6 kB  00:00:00     
+extras                                                                                                            | 2.9 kB  00:00:00     
+updates                                                                                                           | 2.9 kB  00:00:00     
+(1/4): base/7/x86_64/group_gz                                                                                     | 153 kB  00:00:00     
+(2/4): extras/7/x86_64/primary_db                                                                                 | 242 kB  00:00:00     
+(3/4): updates/7/x86_64/primary_db                                                                                | 8.8 MB  00:00:00     
+(4/4): base/7/x86_64/primary_db                                                                                   | 6.1 MB  00:00:00     
+Determining fastest mirrors
+ * base: ftp-srv2.kddilabs.jp
+ * extras: ftp-srv2.kddilabs.jp
+ * updates: ftp-srv2.kddilabs.jp
+パッケージ bzip2-1.0.6-13.el7.x86_64 はインストール済みか最新バージョンです
+パッケージ pcre-8.32-17.el7.x86_64 はインストール済みか最新バージョンです
+パッケージ xz-5.2.2-1.el7.x86_64 はインストール済みか最新バージョンです
+依存性の解決をしています
+--> トランザクションの確認を実行しています。
+---> パッケージ bzip2-devel.x86_64 0:1.0.6-13.el7 を インストール
+---> パッケージ gcc.x86_64 0:4.8.5-16.el7 を 更新
+--> 依存性の処理をしています: gcc = 4.8.5-16.el7 のパッケージ: libquadmath-devel-4.8.5-16.el7.x86_64
+---> パッケージ gcc.x86_64 0:4.8.5-44.el7 を アップデート
+--> 依存性の処理をしています: libgomp = 4.8.5-44.el7 のパッケージ: gcc-4.8.5-44.el7.x86_64
+--> 依存性の処理をしています: cpp = 4.8.5-44.el7 のパッケージ: gcc-4.8.5-44.el7.x86_64
+--> 依存性の処理をしています: libgcc >= 4.8.5-44.el7 のパッケージ: gcc-4.8.5-44.el7.x86_64
+---> パッケージ gcc-c++.x86_64 0:4.8.5-16.el7 を 更新
+---> パッケージ gcc-c++.x86_64 0:4.8.5-44.el7 を アップデート
+--> 依存性の処理をしています: libstdc++-devel = 4.8.5-44.el7 のパッケージ: gcc-c++-4.8.5-44.el7.x86_64
+--> 依存性の処理をしています: libstdc++ = 4.8.5-44.el7 のパッケージ: gcc-c++-4.8.5-44.el7.x86_64
+---> パッケージ gcc-gfortran.x86_64 0:4.8.5-16.el7 を 更新
+---> パッケージ gcc-gfortran.x86_64 0:4.8.5-44.el7 を アップデート
+--> 依存性の処理をしています: libquadmath = 4.8.5-44.el7 のパッケージ: gcc-gfortran-4.8.5-44.el7.x86_64
+---> パッケージ glibc-headers.x86_64 0:2.17-196.el7 を 更新
+--> 依存性の処理をしています: glibc-headers = 2.17-196.el7 のパッケージ: glibc-devel-2.17-196.el7.x86_64
+---> パッケージ glibc-headers.x86_64 0:2.17-324.el7_9 を アップデート
+--> 依存性の処理をしています: glibc = 2.17-324.el7_9 のパッケージ: glibc-headers-2.17-324.el7_9.x86_64
+---> パッケージ java-1.8.0-openjdk.x86_64 1:1.8.0.131-11.b12.el7 を 更新
+---> パッケージ java-1.8.0-openjdk.x86_64 1:1.8.0.292.b10-1.el7_9 を アップデート
+--> 依存性の処理をしています: java-1.8.0-openjdk-headless(x86-64) = 1:1.8.0.292.b10-1.el7_9 のパッケージ: 1:java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64
+---> パッケージ java-1.8.0-openjdk-devel.x86_64 1:1.8.0.292.b10-1.el7_9 を インストール
+---> パッケージ libXt-devel.x86_64 0:1.1.5-3.el7 を インストール
+--> 依存性の処理をしています: pkgconfig(xproto) のパッケージ: libXt-devel-1.1.5-3.el7.x86_64
+--> 依存性の処理をしています: pkgconfig(x11) のパッケージ: libXt-devel-1.1.5-3.el7.x86_64
+--> 依存性の処理をしています: pkgconfig(sm) のパッケージ: libXt-devel-1.1.5-3.el7.x86_64
+--> 依存性の処理をしています: pkgconfig(ice) のパッケージ: libXt-devel-1.1.5-3.el7.x86_64
+---> パッケージ libcurl-devel.x86_64 0:7.29.0-59.el7_9.1 を インストール
+base/7/x86_64/filelists_db                                                                                        | 7.2 MB  00:00:00     
+updates/7/x86_64/filelists_db                                                                                     | 5.1 MB  00:00:00     
+--> 依存性の処理をしています: libcurl = 7.29.0-59.el7_9.1 のパッケージ: libcurl-devel-7.29.0-59.el7_9.1.x86_64
+---> パッケージ libgfortran.x86_64 0:4.8.5-16.el7 を 更新
+---> パッケージ libgfortran.x86_64 0:4.8.5-44.el7 を アップデート
+---> パッケージ openssl-devel.x86_64 1:1.0.2k-21.el7_9 を インストール
+--> 依存性の処理をしています: openssl-libs(x86-64) = 1:1.0.2k-21.el7_9 のパッケージ: 1:openssl-devel-1.0.2k-21.el7_9.x86_64
+--> 依存性の処理をしています: krb5-devel(x86-64) のパッケージ: 1:openssl-devel-1.0.2k-21.el7_9.x86_64
+---> パッケージ pcre-devel.x86_64 0:8.32-17.el7 を インストール
+---> パッケージ pcre2-devel.x86_64 0:10.23-2.el7 を インストール
+--> 依存性の処理をしています: pcre2-utf32(x86-64) = 10.23-2.el7 のパッケージ: pcre2-devel-10.23-2.el7.x86_64
+--> 依存性の処理をしています: pcre2-utf16(x86-64) = 10.23-2.el7 のパッケージ: pcre2-devel-10.23-2.el7.x86_64
+--> 依存性の処理をしています: libpcre2-32.so.0()(64bit) のパッケージ: pcre2-devel-10.23-2.el7.x86_64
+--> 依存性の処理をしています: libpcre2-16.so.0()(64bit) のパッケージ: pcre2-devel-10.23-2.el7.x86_64
+---> パッケージ readline-devel.x86_64 0:6.2-11.el7 を インストール
+--> 依存性の処理をしています: readline = 6.2-11.el7 のパッケージ: readline-devel-6.2-11.el7.x86_64
+--> 依存性の処理をしています: ncurses-devel のパッケージ: readline-devel-6.2-11.el7.x86_64
+---> パッケージ wget.x86_64 0:1.14-15.el7 を 更新
+---> パッケージ wget.x86_64 0:1.14-18.el7_6.1 を アップデート
+---> パッケージ xz-devel.x86_64 0:5.2.2-1.el7 を インストール
+---> パッケージ zlib-devel.x86_64 0:1.2.7-19.el7_9 を インストール
+--> 依存性の処理をしています: zlib = 1.2.7-19.el7_9 のパッケージ: zlib-devel-1.2.7-19.el7_9.x86_64
+--> トランザクションの確認を実行しています。
+---> パッケージ cpp.x86_64 0:4.8.5-16.el7 を 更新
+---> パッケージ cpp.x86_64 0:4.8.5-44.el7 を アップデート
+---> パッケージ glibc.x86_64 0:2.17-196.el7 を 更新
+--> 依存性の処理をしています: glibc = 2.17-196.el7 のパッケージ: glibc-common-2.17-196.el7.x86_64
+---> パッケージ glibc.x86_64 0:2.17-324.el7_9 を アップデート
+---> パッケージ glibc-devel.x86_64 0:2.17-196.el7 を 更新
+---> パッケージ glibc-devel.x86_64 0:2.17-324.el7_9 を アップデート
+---> パッケージ java-1.8.0-openjdk-headless.x86_64 1:1.8.0.131-11.b12.el7 を 更新
+---> パッケージ java-1.8.0-openjdk-headless.x86_64 1:1.8.0.292.b10-1.el7_9 を アップデート
+--> 依存性の処理をしています: tzdata-java >= 2021a のパッケージ: 1:java-1.8.0-openjdk-headless-1.8.0.292.b10-1.el7_9.x86_64
+--> 依存性の処理をしています: copy-jdk-configs >= 3.3 のパッケージ: 1:java-1.8.0-openjdk-headless-1.8.0.292.b10-1.el7_9.x86_64
+---> パッケージ krb5-devel.x86_64 0:1.15.1-50.el7 を インストール
+--> 依存性の処理をしています: libkadm5(x86-64) = 1.15.1-50.el7 のパッケージ: krb5-devel-1.15.1-50.el7.x86_64
+--> 依存性の処理をしています: krb5-libs(x86-64) = 1.15.1-50.el7 のパッケージ: krb5-devel-1.15.1-50.el7.x86_64
+--> 依存性の処理をしています: libverto-devel のパッケージ: krb5-devel-1.15.1-50.el7.x86_64
+--> 依存性の処理をしています: libselinux-devel のパッケージ: krb5-devel-1.15.1-50.el7.x86_64
+--> 依存性の処理をしています: libcom_err-devel のパッケージ: krb5-devel-1.15.1-50.el7.x86_64
+--> 依存性の処理をしています: keyutils-libs-devel のパッケージ: krb5-devel-1.15.1-50.el7.x86_64
+---> パッケージ libICE-devel.x86_64 0:1.0.9-9.el7 を インストール
+---> パッケージ libSM-devel.x86_64 0:1.2.2-2.el7 を インストール
+---> パッケージ libX11-devel.x86_64 0:1.6.7-3.el7_9 を インストール
+--> 依存性の処理をしています: libX11 = 1.6.7-3.el7_9 のパッケージ: libX11-devel-1.6.7-3.el7_9.x86_64
+--> 依存性の処理をしています: pkgconfig(xcb) >= 1.11.1 のパッケージ: libX11-devel-1.6.7-3.el7_9.x86_64
+--> 依存性の処理をしています: pkgconfig(xcb) のパッケージ: libX11-devel-1.6.7-3.el7_9.x86_64
+---> パッケージ libcurl.x86_64 0:7.29.0-42.el7 を 更新
+--> 依存性の処理をしています: libcurl = 7.29.0-42.el7 のパッケージ: curl-7.29.0-42.el7.x86_64
+---> パッケージ libcurl.x86_64 0:7.29.0-59.el7_9.1 を アップデート
+--> 依存性の処理をしています: nss-pem(x86-64) >= 1.0.3-5 のパッケージ: libcurl-7.29.0-59.el7_9.1.x86_64
+--> 依存性の処理をしています: libssh2(x86-64) >= 1.8.0 のパッケージ: libcurl-7.29.0-59.el7_9.1.x86_64
+--> 依存性の処理をしています: libnss3.so(NSS_3.34)(64bit) のパッケージ: libcurl-7.29.0-59.el7_9.1.x86_64
+---> パッケージ libgcc.x86_64 0:4.8.5-16.el7 を 更新
+---> パッケージ libgcc.x86_64 0:4.8.5-44.el7 を アップデート
+---> パッケージ libgomp.x86_64 0:4.8.5-16.el7 を 更新
+---> パッケージ libgomp.x86_64 0:4.8.5-44.el7 を アップデート
+---> パッケージ libquadmath.x86_64 0:4.8.5-16.el7 を 更新
+---> パッケージ libquadmath.x86_64 0:4.8.5-44.el7 を アップデート
+---> パッケージ libquadmath-devel.x86_64 0:4.8.5-16.el7 を 更新
+---> パッケージ libquadmath-devel.x86_64 0:4.8.5-44.el7 を アップデート
+---> パッケージ libstdc++.x86_64 0:4.8.5-16.el7 を 更新
+---> パッケージ libstdc++.x86_64 0:4.8.5-44.el7 を アップデート
+---> パッケージ libstdc++-devel.x86_64 0:4.8.5-16.el7 を 更新
+---> パッケージ libstdc++-devel.x86_64 0:4.8.5-44.el7 を アップデート
+---> パッケージ ncurses-devel.x86_64 0:5.9-14.20130511.el7_4 を インストール
+--> 依存性の処理をしています: ncurses-libs(x86-64) = 5.9-14.20130511.el7_4 のパッケージ: ncurses-devel-5.9-14.20130511.el7_4.x86_64
+---> パッケージ openssl-libs.x86_64 1:1.0.2k-8.el7 を 更新
+--> 依存性の処理をしています: openssl-libs(x86-64) = 1:1.0.2k-8.el7 のパッケージ: 1:openssl-1.0.2k-8.el7.x86_64
+---> パッケージ openssl-libs.x86_64 1:1.0.2k-21.el7_9 を アップデート
+---> パッケージ pcre2-utf16.x86_64 0:10.23-2.el7 を インストール
+---> パッケージ pcre2-utf32.x86_64 0:10.23-2.el7 を インストール
+---> パッケージ readline.x86_64 0:6.2-10.el7 を 更新
+---> パッケージ readline.x86_64 0:6.2-11.el7 を アップデート
+---> パッケージ xorg-x11-proto-devel.noarch 0:2018.4-1.el7 を インストール
+---> パッケージ zlib.x86_64 0:1.2.7-17.el7 を 更新
+---> パッケージ zlib.x86_64 0:1.2.7-19.el7_9 を アップデート
+--> トランザクションの確認を実行しています。
+---> パッケージ copy-jdk-configs.noarch 0:2.2-3.el7 を 更新
+---> パッケージ copy-jdk-configs.noarch 0:3.3-10.el7_5 を アップデート
+---> パッケージ curl.x86_64 0:7.29.0-42.el7 を 更新
+---> パッケージ curl.x86_64 0:7.29.0-59.el7_9.1 を アップデート
+---> パッケージ glibc-common.x86_64 0:2.17-196.el7 を 更新
+---> パッケージ glibc-common.x86_64 0:2.17-324.el7_9 を アップデート
+---> パッケージ keyutils-libs-devel.x86_64 0:1.5.8-3.el7 を インストール
+---> パッケージ krb5-libs.x86_64 0:1.15.1-8.el7 を 更新
+--> 依存性の処理をしています: krb5-libs(x86-64) = 1.15.1-8.el7 のパッケージ: krb5-workstation-1.15.1-8.el7.x86_64
+---> パッケージ krb5-libs.x86_64 0:1.15.1-50.el7 を アップデート
+---> パッケージ libX11.x86_64 0:1.6.5-1.el7 を 更新
+---> パッケージ libX11.x86_64 0:1.6.7-3.el7_9 を アップデート
+--> 依存性の処理をしています: libX11-common >= 1.6.7-3.el7_9 のパッケージ: libX11-1.6.7-3.el7_9.x86_64
+---> パッケージ libcom_err-devel.x86_64 0:1.42.9-19.el7 を インストール
+--> 依存性の処理をしています: libcom_err(x86-64) = 1.42.9-19.el7 のパッケージ: libcom_err-devel-1.42.9-19.el7.x86_64
+---> パッケージ libkadm5.x86_64 0:1.15.1-8.el7 を 更新
+---> パッケージ libkadm5.x86_64 0:1.15.1-50.el7 を アップデート
+---> パッケージ libselinux-devel.x86_64 0:2.5-15.el7 を インストール
+--> 依存性の処理をしています: libselinux(x86-64) = 2.5-15.el7 のパッケージ: libselinux-devel-2.5-15.el7.x86_64
+--> 依存性の処理をしています: libsepol-devel(x86-64) >= 2.5-10 のパッケージ: libselinux-devel-2.5-15.el7.x86_64
+--> 依存性の処理をしています: pkgconfig(libsepol) のパッケージ: libselinux-devel-2.5-15.el7.x86_64
+---> パッケージ libssh2.x86_64 0:1.4.3-10.el7_2.1 を 更新
+---> パッケージ libssh2.x86_64 0:1.8.0-4.el7 を アップデート
+---> パッケージ libverto-devel.x86_64 0:0.2.5-4.el7 を インストール
+---> パッケージ libxcb-devel.x86_64 0:1.13-1.el7 を インストール
+--> 依存性の処理をしています: libxcb(x86-64) = 1.13-1.el7 のパッケージ: libxcb-devel-1.13-1.el7.x86_64
+--> 依存性の処理をしています: pkgconfig(xau) >= 0.99.2 のパッケージ: libxcb-devel-1.13-1.el7.x86_64
+---> パッケージ ncurses-libs.x86_64 0:5.9-13.20130511.el7 を 更新
+--> 依存性の処理をしています: ncurses-libs(x86-64) = 5.9-13.20130511.el7 のパッケージ: ncurses-5.9-13.20130511.el7.x86_64
+---> パッケージ ncurses-libs.x86_64 0:5.9-14.20130511.el7_4 を アップデート
+--> 依存性の処理をしています: ncurses-base = 5.9-14.20130511.el7_4 のパッケージ: ncurses-libs-5.9-14.20130511.el7_4.x86_64
+---> パッケージ nss.x86_64 0:3.28.4-8.el7 を 更新
+--> 依存性の処理をしています: nss = 3.28.4-8.el7 のパッケージ: nss-sysinit-3.28.4-8.el7.x86_64
+--> 依存性の処理をしています: nss(x86-64) = 3.28.4-8.el7 のパッケージ: nss-tools-3.28.4-8.el7.x86_64
+---> パッケージ nss.x86_64 0:3.53.1-7.el7_9 を アップデート
+--> 依存性の処理をしています: nss-util >= 3.53.1-1 のパッケージ: nss-3.53.1-7.el7_9.x86_64
+--> 依存性の処理をしています: nss-softokn(x86-64) >= 3.53.1-2 のパッケージ: nss-3.53.1-7.el7_9.x86_64
+--> 依存性の処理をしています: nspr >= 4.25.0 のパッケージ: nss-3.53.1-7.el7_9.x86_64
+--> 依存性の処理をしています: libnssutil3.so(NSSUTIL_3.39)(64bit) のパッケージ: nss-3.53.1-7.el7_9.x86_64
+--> 依存性の処理をしています: libnssutil3.so(NSSUTIL_3.38)(64bit) のパッケージ: nss-3.53.1-7.el7_9.x86_64
+--> 依存性の処理をしています: libnssutil3.so(NSSUTIL_3.31)(64bit) のパッケージ: nss-3.53.1-7.el7_9.x86_64
+---> パッケージ nss-pem.x86_64 0:1.0.3-4.el7 を 更新
+---> パッケージ nss-pem.x86_64 0:1.0.3-7.el7 を アップデート
+---> パッケージ openssl.x86_64 1:1.0.2k-8.el7 を 更新
+---> パッケージ openssl.x86_64 1:1.0.2k-21.el7_9 を アップデート
+---> パッケージ tzdata-java.noarch 0:2017b-1.el7 を 更新
+---> パッケージ tzdata-java.noarch 0:2021a-1.el7 を アップデート
+--> トランザクションの確認を実行しています。
+---> パッケージ krb5-workstation.x86_64 0:1.15.1-8.el7 を 更新
+---> パッケージ krb5-workstation.x86_64 0:1.15.1-50.el7 を アップデート
+---> パッケージ libX11-common.noarch 0:1.6.5-1.el7 を 更新
+---> パッケージ libX11-common.noarch 0:1.6.7-3.el7_9 を アップデート
+---> パッケージ libXau-devel.x86_64 0:1.0.8-2.1.el7 を インストール
+---> パッケージ libcom_err.x86_64 0:1.42.9-10.el7 を 更新
+--> 依存性の処理をしています: libcom_err(x86-64) = 1.42.9-10.el7 のパッケージ: e2fsprogs-1.42.9-10.el7.x86_64
+--> 依存性の処理をしています: libcom_err(x86-64) = 1.42.9-10.el7 のパッケージ: libss-1.42.9-10.el7.x86_64
+--> 依存性の処理をしています: libcom_err(x86-64) = 1.42.9-10.el7 のパッケージ: e2fsprogs-libs-1.42.9-10.el7.x86_64
+---> パッケージ libcom_err.x86_64 0:1.42.9-19.el7 を アップデート
+---> パッケージ libselinux.x86_64 0:2.5-11.el7 を 更新
+--> 依存性の処理をしています: libselinux(x86-64) = 2.5-11.el7 のパッケージ: libselinux-utils-2.5-11.el7.x86_64
+--> 依存性の処理をしています: libselinux(x86-64) = 2.5-11.el7 のパッケージ: libselinux-python-2.5-11.el7.x86_64
+---> パッケージ libselinux.x86_64 0:2.5-15.el7 を アップデート
+--> 依存性の処理をしています: libsepol(x86-64) >= 2.5-10 のパッケージ: libselinux-2.5-15.el7.x86_64
+---> パッケージ libsepol-devel.x86_64 0:2.5-10.el7 を インストール
+---> パッケージ libxcb.x86_64 0:1.12-1.el7 を 更新
+---> パッケージ libxcb.x86_64 0:1.13-1.el7 を アップデート
+---> パッケージ ncurses.x86_64 0:5.9-13.20130511.el7 を 更新
+---> パッケージ ncurses.x86_64 0:5.9-14.20130511.el7_4 を アップデート
+---> パッケージ ncurses-base.noarch 0:5.9-13.20130511.el7 を 更新
+---> パッケージ ncurses-base.noarch 0:5.9-14.20130511.el7_4 を アップデート
+---> パッケージ nspr.x86_64 0:4.13.1-1.0.el7_3 を 更新
+---> パッケージ nspr.x86_64 0:4.25.0-2.el7_9 を アップデート
+---> パッケージ nss-softokn.x86_64 0:3.28.3-6.el7 を 更新
+---> パッケージ nss-softokn.x86_64 0:3.53.1-6.el7_9 を アップデート
+--> 依存性の処理をしています: nss-softokn-freebl(x86-64) >= 3.53.1-6.el7_9 のパッケージ: nss-softokn-3.53.1-6.el7_9.x86_64
+---> パッケージ nss-sysinit.x86_64 0:3.28.4-8.el7 を 更新
+---> パッケージ nss-sysinit.x86_64 0:3.53.1-7.el7_9 を アップデート
+---> パッケージ nss-tools.x86_64 0:3.28.4-8.el7 を 更新
+---> パッケージ nss-tools.x86_64 0:3.53.1-7.el7_9 を アップデート
+---> パッケージ nss-util.x86_64 0:3.28.4-3.el7 を 更新
+---> パッケージ nss-util.x86_64 0:3.53.1-1.el7_9 を アップデート
+--> トランザクションの確認を実行しています。
+---> パッケージ e2fsprogs.x86_64 0:1.42.9-10.el7 を 更新
+---> パッケージ e2fsprogs.x86_64 0:1.42.9-19.el7 を アップデート
+---> パッケージ e2fsprogs-libs.x86_64 0:1.42.9-10.el7 を 更新
+---> パッケージ e2fsprogs-libs.x86_64 0:1.42.9-19.el7 を アップデート
+---> パッケージ libselinux-python.x86_64 0:2.5-11.el7 を 更新
+---> パッケージ libselinux-python.x86_64 0:2.5-15.el7 を アップデート
+---> パッケージ libselinux-utils.x86_64 0:2.5-11.el7 を 更新
+---> パッケージ libselinux-utils.x86_64 0:2.5-15.el7 を アップデート
+---> パッケージ libsepol.x86_64 0:2.5-6.el7 を 更新
+---> パッケージ libsepol.x86_64 0:2.5-10.el7 を アップデート
+---> パッケージ libss.x86_64 0:1.42.9-10.el7 を 更新
+---> パッケージ libss.x86_64 0:1.42.9-19.el7 を アップデート
+---> パッケージ nss-softokn-freebl.x86_64 0:3.28.3-6.el7 を 更新
+---> パッケージ nss-softokn-freebl.x86_64 0:3.53.1-6.el7_9 を アップデート
+--> 依存性解決を終了しました。
+
+依存性を解決しました
+
+=========================================================================================================================================
+ Package                                    アーキテクチャー      バージョン                                リポジトリー            容量
+=========================================================================================================================================
+インストール中:
+ bzip2-devel                                x86_64                1.0.6-13.el7                              base                   218 k
+ java-1.8.0-openjdk-devel                   x86_64                1:1.8.0.292.b10-1.el7_9                   updates                9.8 M
+ libXt-devel                                x86_64                1.1.5-3.el7                               base                   446 k
+ libcurl-devel                              x86_64                7.29.0-59.el7_9.1                         updates                303 k
+ openssl-devel                              x86_64                1:1.0.2k-21.el7_9                         updates                1.5 M
+ pcre-devel                                 x86_64                8.32-17.el7                               base                   480 k
+ pcre2-devel                                x86_64                10.23-2.el7                               base                   545 k
+ readline-devel                             x86_64                6.2-11.el7                                base                   139 k
+ xz-devel                                   x86_64                5.2.2-1.el7                               base                    46 k
+ zlib-devel                                 x86_64                1.2.7-19.el7_9                            updates                 50 k
+更新します:
+ gcc                                        x86_64                4.8.5-44.el7                              base                    16 M
+ gcc-c++                                    x86_64                4.8.5-44.el7                              base                   7.2 M
+ gcc-gfortran                               x86_64                4.8.5-44.el7                              base                   6.7 M
+ glibc-headers                              x86_64                2.17-324.el7_9                            updates                691 k
+ java-1.8.0-openjdk                         x86_64                1:1.8.0.292.b10-1.el7_9                   updates                310 k
+ libgfortran                                x86_64                4.8.5-44.el7                              base                   301 k
+ wget                                       x86_64                1.14-18.el7_6.1                           base                   547 k
+依存性関連でのインストールをします:
+ keyutils-libs-devel                        x86_64                1.5.8-3.el7                               base                    37 k
+ krb5-devel                                 x86_64                1.15.1-50.el7                             base                   273 k
+ libICE-devel                               x86_64                1.0.9-9.el7                               base                    50 k
+ libSM-devel                                x86_64                1.2.2-2.el7                               base                    13 k
+ libX11-devel                               x86_64                1.6.7-3.el7_9                             updates                981 k
+ libXau-devel                               x86_64                1.0.8-2.1.el7                             base                    14 k
+ libcom_err-devel                           x86_64                1.42.9-19.el7                             base                    32 k
+ libselinux-devel                           x86_64                2.5-15.el7                                base                   187 k
+ libsepol-devel                             x86_64                2.5-10.el7                                base                    77 k
+ libverto-devel                             x86_64                0.2.5-4.el7                               base                    12 k
+ libxcb-devel                               x86_64                1.13-1.el7                                base                   1.1 M
+ ncurses-devel                              x86_64                5.9-14.20130511.el7_4                     base                   712 k
+ pcre2-utf16                                x86_64                10.23-2.el7                               base                   189 k
+ pcre2-utf32                                x86_64                10.23-2.el7                               base                   181 k
+ xorg-x11-proto-devel                       noarch                2018.4-1.el7                              base                   280 k
+依存性関連での更新をします:
+ copy-jdk-configs                           noarch                3.3-10.el7_5                              base                    21 k
+ cpp                                        x86_64                4.8.5-44.el7                              base                   5.9 M
+ curl                                       x86_64                7.29.0-59.el7_9.1                         updates                271 k
+ e2fsprogs                                  x86_64                1.42.9-19.el7                             base                   701 k
+ e2fsprogs-libs                             x86_64                1.42.9-19.el7                             base                   168 k
+ glibc                                      x86_64                2.17-324.el7_9                            updates                3.6 M
+ glibc-common                               x86_64                2.17-324.el7_9                            updates                 12 M
+ glibc-devel                                x86_64                2.17-324.el7_9                            updates                1.1 M
+ java-1.8.0-openjdk-headless                x86_64                1:1.8.0.292.b10-1.el7_9                   updates                 33 M
+ krb5-libs                                  x86_64                1.15.1-50.el7                             base                   809 k
+ krb5-workstation                           x86_64                1.15.1-50.el7                             base                   820 k
+ libX11                                     x86_64                1.6.7-3.el7_9                             updates                607 k
+ libX11-common                              noarch                1.6.7-3.el7_9                             updates                164 k
+ libcom_err                                 x86_64                1.42.9-19.el7                             base                    42 k
+ libcurl                                    x86_64                7.29.0-59.el7_9.1                         updates                223 k
+ libgcc                                     x86_64                4.8.5-44.el7                              base                   103 k
+ libgomp                                    x86_64                4.8.5-44.el7                              base                   159 k
+ libkadm5                                   x86_64                1.15.1-50.el7                             base                   179 k
+ libquadmath                                x86_64                4.8.5-44.el7                              base                   190 k
+ libquadmath-devel                          x86_64                4.8.5-44.el7                              base                    54 k
+ libselinux                                 x86_64                2.5-15.el7                                base                   162 k
+ libselinux-python                          x86_64                2.5-15.el7                                base                   236 k
+ libselinux-utils                           x86_64                2.5-15.el7                                base                   151 k
+ libsepol                                   x86_64                2.5-10.el7                                base                   297 k
+ libss                                      x86_64                1.42.9-19.el7                             base                    47 k
+ libssh2                                    x86_64                1.8.0-4.el7                               base                    88 k
+ libstdc++                                  x86_64                4.8.5-44.el7                              base                   306 k
+ libstdc++-devel                            x86_64                4.8.5-44.el7                              base                   1.5 M
+ libxcb                                     x86_64                1.13-1.el7                                base                   214 k
+ ncurses                                    x86_64                5.9-14.20130511.el7_4                     base                   304 k
+ ncurses-base                               noarch                5.9-14.20130511.el7_4                     base                    68 k
+ ncurses-libs                               x86_64                5.9-14.20130511.el7_4                     base                   316 k
+ nspr                                       x86_64                4.25.0-2.el7_9                            updates                127 k
+ nss                                        x86_64                3.53.1-7.el7_9                            updates                869 k
+ nss-pem                                    x86_64                1.0.3-7.el7                               base                    74 k
+ nss-softokn                                x86_64                3.53.1-6.el7_9                            updates                354 k
+ nss-softokn-freebl                         x86_64                3.53.1-6.el7_9                            updates                322 k
+ nss-sysinit                                x86_64                3.53.1-7.el7_9                            updates                 66 k
+ nss-tools                                  x86_64                3.53.1-7.el7_9                            updates                535 k
+ nss-util                                   x86_64                3.53.1-1.el7_9                            updates                 79 k
+ openssl                                    x86_64                1:1.0.2k-21.el7_9                         updates                493 k
+ openssl-libs                               x86_64                1:1.0.2k-21.el7_9                         updates                1.2 M
+ readline                                   x86_64                6.2-11.el7                                base                   193 k
+ tzdata-java                                noarch                2021a-1.el7                               updates                191 k
+ zlib                                       x86_64                1.2.7-19.el7_9                            updates                 90 k
+
+トランザクションの要約
+=========================================================================================================================================
+インストール  10 パッケージ (+15 個の依存関係のパッケージ)
+更新           7 パッケージ (+45 個の依存関係のパッケージ)
+
+総ダウンロード容量: 117 M
+Downloading packages:
+No Presto metadata available for base
+No Presto metadata available for updates
+警告: /var/cache/yum/x86_64/7/base/packages/copy-jdk-configs-3.3-10.el7_5.noarch.rpm: ヘッダー V3 RSA/SHA256 Signature、鍵 ID f4a80eb5: NOKEY
+copy-jdk-configs-3.3-10.el7_5.noarch.rpm の公開鍵がインストールされていません
+(1/77): copy-jdk-configs-3.3-10.el7_5.noarch.rpm                                                                  |  21 kB  00:00:00     
+(2/77): bzip2-devel-1.0.6-13.el7.x86_64.rpm                                                                       | 218 kB  00:00:00     
+(3/77): e2fsprogs-1.42.9-19.el7.x86_64.rpm                                                                        | 701 kB  00:00:00     
+(4/77): cpp-4.8.5-44.el7.x86_64.rpm                                                                               | 5.9 MB  00:00:00     
+curl-7.29.0-59.el7_9.1.x86_64.rpm の公開鍵がインストールされていません
+(5/77): curl-7.29.0-59.el7_9.1.x86_64.rpm                                                                         | 271 kB  00:00:00     
+(6/77): e2fsprogs-libs-1.42.9-19.el7.x86_64.rpm                                                                   | 168 kB  00:00:00     
+(7/77): gcc-c++-4.8.5-44.el7.x86_64.rpm                                                                           | 7.2 MB  00:00:00     
+(8/77): gcc-4.8.5-44.el7.x86_64.rpm                                                                               |  16 MB  00:00:00     
+(9/77): gcc-gfortran-4.8.5-44.el7.x86_64.rpm                                                                      | 6.7 MB  00:00:00     
+(10/77): glibc-2.17-324.el7_9.x86_64.rpm                                                                          | 3.6 MB  00:00:00     
+(11/77): glibc-devel-2.17-324.el7_9.x86_64.rpm                                                                    | 1.1 MB  00:00:00     
+(12/77): glibc-headers-2.17-324.el7_9.x86_64.rpm                                                                  | 691 kB  00:00:00     
+(13/77): java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64.rpm                                                      | 310 kB  00:00:00     
+(14/77): glibc-common-2.17-324.el7_9.x86_64.rpm                                                                   |  12 MB  00:00:00     
+(15/77): java-1.8.0-openjdk-devel-1.8.0.292.b10-1.el7_9.x86_64.rpm                                                | 9.8 MB  00:00:00     
+(16/77): keyutils-libs-devel-1.5.8-3.el7.x86_64.rpm                                                               |  37 kB  00:00:00     
+(17/77): krb5-libs-1.15.1-50.el7.x86_64.rpm                                                                       | 809 kB  00:00:00     
+(18/77): krb5-devel-1.15.1-50.el7.x86_64.rpm                                                                      | 273 kB  00:00:00     
+(19/77): krb5-workstation-1.15.1-50.el7.x86_64.rpm                                                                | 820 kB  00:00:00     
+(20/77): libICE-devel-1.0.9-9.el7.x86_64.rpm                                                                      |  50 kB  00:00:00     
+(21/77): libSM-devel-1.2.2-2.el7.x86_64.rpm                                                                       |  13 kB  00:00:00     
+(22/77): libX11-1.6.7-3.el7_9.x86_64.rpm                                                                          | 607 kB  00:00:00     
+(23/77): libX11-common-1.6.7-3.el7_9.noarch.rpm                                                                   | 164 kB  00:00:00     
+(24/77): libX11-devel-1.6.7-3.el7_9.x86_64.rpm                                                                    | 981 kB  00:00:00     
+(25/77): libXau-devel-1.0.8-2.1.el7.x86_64.rpm                                                                    |  14 kB  00:00:00     
+(26/77): libXt-devel-1.1.5-3.el7.x86_64.rpm                                                                       | 446 kB  00:00:00     
+(27/77): libcom_err-1.42.9-19.el7.x86_64.rpm                                                                      |  42 kB  00:00:00     
+(28/77): libcom_err-devel-1.42.9-19.el7.x86_64.rpm                                                                |  32 kB  00:00:00     
+(29/77): java-1.8.0-openjdk-headless-1.8.0.292.b10-1.el7_9.x86_64.rpm                                             |  33 MB  00:00:01     
+(30/77): libcurl-7.29.0-59.el7_9.1.x86_64.rpm                                                                     | 223 kB  00:00:00     
+(31/77): libcurl-devel-7.29.0-59.el7_9.1.x86_64.rpm                                                               | 303 kB  00:00:00     
+(32/77): libgcc-4.8.5-44.el7.x86_64.rpm                                                                           | 103 kB  00:00:00     
+(33/77): libgomp-4.8.5-44.el7.x86_64.rpm                                                                          | 159 kB  00:00:00     
+(34/77): libgfortran-4.8.5-44.el7.x86_64.rpm                                                                      | 301 kB  00:00:00     
+(35/77): libkadm5-1.15.1-50.el7.x86_64.rpm                                                                        | 179 kB  00:00:00     
+(36/77): libquadmath-4.8.5-44.el7.x86_64.rpm                                                                      | 190 kB  00:00:00     
+(37/77): libquadmath-devel-4.8.5-44.el7.x86_64.rpm                                                                |  54 kB  00:00:00     
+(38/77): libselinux-devel-2.5-15.el7.x86_64.rpm                                                                   | 187 kB  00:00:00     
+(39/77): libselinux-2.5-15.el7.x86_64.rpm                                                                         | 162 kB  00:00:00     
+(40/77): libselinux-utils-2.5-15.el7.x86_64.rpm                                                                   | 151 kB  00:00:00     
+(41/77): libselinux-python-2.5-15.el7.x86_64.rpm                                                                  | 236 kB  00:00:00     
+(42/77): libsepol-2.5-10.el7.x86_64.rpm                                                                           | 297 kB  00:00:00     
+(43/77): libss-1.42.9-19.el7.x86_64.rpm                                                                           |  47 kB  00:00:00     
+(44/77): libssh2-1.8.0-4.el7.x86_64.rpm                                                                           |  88 kB  00:00:00     
+(45/77): libstdc++-4.8.5-44.el7.x86_64.rpm                                                                        | 306 kB  00:00:00     
+(46/77): libstdc++-devel-4.8.5-44.el7.x86_64.rpm                                                                  | 1.5 MB  00:00:00     
+(47/77): libsepol-devel-2.5-10.el7.x86_64.rpm                                                                     |  77 kB  00:00:00     
+(48/77): libverto-devel-0.2.5-4.el7.x86_64.rpm                                                                    |  12 kB  00:00:00     
+(49/77): libxcb-1.13-1.el7.x86_64.rpm                                                                             | 214 kB  00:00:00     
+(50/77): ncurses-5.9-14.20130511.el7_4.x86_64.rpm                                                                 | 304 kB  00:00:00     
+(51/77): ncurses-base-5.9-14.20130511.el7_4.noarch.rpm                                                            |  68 kB  00:00:00     
+(52/77): ncurses-devel-5.9-14.20130511.el7_4.x86_64.rpm                                                           | 712 kB  00:00:00     
+(53/77): ncurses-libs-5.9-14.20130511.el7_4.x86_64.rpm                                                            | 316 kB  00:00:00     
+(54/77): nss-pem-1.0.3-7.el7.x86_64.rpm                                                                           |  74 kB  00:00:00     
+(55/77): libxcb-devel-1.13-1.el7.x86_64.rpm                                                                       | 1.1 MB  00:00:00     
+(56/77): nspr-4.25.0-2.el7_9.x86_64.rpm                                                                           | 127 kB  00:00:00     
+(57/77): nss-softokn-3.53.1-6.el7_9.x86_64.rpm                                                                    | 354 kB  00:00:00     
+(58/77): nss-softokn-freebl-3.53.1-6.el7_9.x86_64.rpm                                                             | 322 kB  00:00:00     
+(59/77): nss-sysinit-3.53.1-7.el7_9.x86_64.rpm                                                                    |  66 kB  00:00:00     
+(60/77): nss-3.53.1-7.el7_9.x86_64.rpm                                                                            | 869 kB  00:00:00     
+(61/77): nss-tools-3.53.1-7.el7_9.x86_64.rpm                                                                      | 535 kB  00:00:00     
+(62/77): nss-util-3.53.1-1.el7_9.x86_64.rpm                                                                       |  79 kB  00:00:00     
+(63/77): openssl-1.0.2k-21.el7_9.x86_64.rpm                                                                       | 493 kB  00:00:00     
+(64/77): openssl-libs-1.0.2k-21.el7_9.x86_64.rpm                                                                  | 1.2 MB  00:00:00     
+(65/77): openssl-devel-1.0.2k-21.el7_9.x86_64.rpm                                                                 | 1.5 MB  00:00:00     
+(66/77): pcre-devel-8.32-17.el7.x86_64.rpm                                                                        | 480 kB  00:00:00     
+(67/77): pcre2-devel-10.23-2.el7.x86_64.rpm                                                                       | 545 kB  00:00:00     
+(68/77): pcre2-utf32-10.23-2.el7.x86_64.rpm                                                                       | 181 kB  00:00:00     
+(69/77): readline-6.2-11.el7.x86_64.rpm                                                                           | 193 kB  00:00:00     
+(70/77): pcre2-utf16-10.23-2.el7.x86_64.rpm                                                                       | 189 kB  00:00:00     
+(71/77): readline-devel-6.2-11.el7.x86_64.rpm                                                                     | 139 kB  00:00:00     
+(72/77): wget-1.14-18.el7_6.1.x86_64.rpm                                                                          | 547 kB  00:00:00     
+(73/77): xorg-x11-proto-devel-2018.4-1.el7.noarch.rpm                                                             | 280 kB  00:00:00     
+(74/77): xz-devel-5.2.2-1.el7.x86_64.rpm                                                                          |  46 kB  00:00:00     
+(75/77): tzdata-java-2021a-1.el7.noarch.rpm                                                                       | 191 kB  00:00:00     
+(76/77): zlib-devel-1.2.7-19.el7_9.x86_64.rpm                                                                     |  50 kB  00:00:00     
+(77/77): zlib-1.2.7-19.el7_9.x86_64.rpm                                                                           |  90 kB  00:00:00     
+-----------------------------------------------------------------------------------------------------------------------------------------
+合計                                                                                                      31 MB/s | 117 MB  00:00:03     
+file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7 から鍵を取得中です。
+Importing GPG key 0xF4A80EB5:
+ Userid     : "CentOS-7 Key (CentOS 7 Official Signing Key) <security@centos.org>"
+ Fingerprint: 6341 ab27 53d7 8a78 a7c2 7bb1 24c6 a8a7 f4a8 0eb5
+ Package    : centos-release-7-4.1708.el7.centos.x86_64 (@anaconda)
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  更新します              : libgcc-4.8.5-44.el7.x86_64                                                                             1/129 
+  更新します              : glibc-common-2.17-324.el7_9.x86_64                                                                     2/129 
+  更新します              : nss-softokn-freebl-3.53.1-6.el7_9.x86_64                                                               3/129 
+  更新します              : glibc-2.17-324.el7_9.x86_64                                                                            4/129 
+warning: /etc/nsswitch.conf created as /etc/nsswitch.conf.rpmnew
+  更新します              : nspr-4.25.0-2.el7_9.x86_64                                                                             5/129 
+  更新します              : nss-util-3.53.1-1.el7_9.x86_64                                                                         6/129 
+  更新します              : libsepol-2.5-10.el7.x86_64                                                                             7/129 
+  更新します              : libselinux-2.5-15.el7.x86_64                                                                           8/129 
+  更新します              : zlib-1.2.7-19.el7_9.x86_64                                                                             9/129 
+  更新します              : libcom_err-1.42.9-19.el7.x86_64                                                                       10/129 
+  更新します              : 1:openssl-libs-1.0.2k-21.el7_9.x86_64                                                                 11/129 
+  更新します              : krb5-libs-1.15.1-50.el7.x86_64                                                                        12/129 
+  更新します              : libstdc++-4.8.5-44.el7.x86_64                                                                         13/129 
+  インストール中          : xorg-x11-proto-devel-2018.4-1.el7.noarch                                                              14/129 
+  更新します              : libquadmath-4.8.5-44.el7.x86_64                                                                       15/129 
+  インストール中          : libICE-devel-1.0.9-9.el7.x86_64                                                                       16/129 
+  更新します              : libkadm5-1.15.1-50.el7.x86_64                                                                         17/129 
+  更新します              : libss-1.42.9-19.el7.x86_64                                                                            18/129 
+  更新します              : nss-softokn-3.53.1-6.el7_9.x86_64                                                                     19/129 
+  更新します              : nss-pem-1.0.3-7.el7.x86_64                                                                            20/129 
+  更新します              : nss-sysinit-3.53.1-7.el7_9.x86_64                                                                     21/129 
+  更新します              : nss-3.53.1-7.el7_9.x86_64                                                                             22/129 
+  更新します              : libxcb-1.13-1.el7.x86_64                                                                              23/129 
+  インストール中          : libSM-devel-1.2.2-2.el7.x86_64                                                                        24/129 
+  更新します              : libgfortran-4.8.5-44.el7.x86_64                                                                       25/129 
+  インストール中          : libXau-devel-1.0.8-2.1.el7.x86_64                                                                     26/129 
+  インストール中          : libxcb-devel-1.13-1.el7.x86_64                                                                        27/129 
+  更新します              : libstdc++-devel-4.8.5-44.el7.x86_64                                                                   28/129 
+  更新します              : libssh2-1.8.0-4.el7.x86_64                                                                            29/129 
+  更新します              : libcurl-7.29.0-59.el7_9.1.x86_64                                                                      30/129 
+  更新します              : e2fsprogs-libs-1.42.9-19.el7.x86_64                                                                   31/129 
+  インストール中          : libcom_err-devel-1.42.9-19.el7.x86_64                                                                 32/129 
+  更新します              : cpp-4.8.5-44.el7.x86_64                                                                               33/129 
+  インストール中          : zlib-devel-1.2.7-19.el7_9.x86_64                                                                      34/129 
+  インストール中          : libsepol-devel-2.5-10.el7.x86_64                                                                      35/129 
+  更新します              : glibc-headers-2.17-324.el7_9.x86_64                                                                   36/129 
+  更新します              : glibc-devel-2.17-324.el7_9.x86_64                                                                     37/129 
+  インストール中          : pcre2-utf32-10.23-2.el7.x86_64                                                                        38/129 
+  更新します              : libgomp-4.8.5-44.el7.x86_64                                                                           39/129 
+  更新します              : gcc-4.8.5-44.el7.x86_64                                                                               40/129 
+  更新します              : libquadmath-devel-4.8.5-44.el7.x86_64                                                                 41/129 
+  インストール中          : pcre2-utf16-10.23-2.el7.x86_64                                                                        42/129 
+  更新します              : libX11-common-1.6.7-3.el7_9.noarch                                                                    43/129 
+  更新します              : libX11-1.6.7-3.el7_9.x86_64                                                                           44/129 
+  インストール中          : libX11-devel-1.6.7-3.el7_9.x86_64                                                                     45/129 
+  更新します              : ncurses-base-5.9-14.20130511.el7_4.noarch                                                             46/129 
+  更新します              : ncurses-libs-5.9-14.20130511.el7_4.x86_64                                                             47/129 
+  更新します              : readline-6.2-11.el7.x86_64                                                                            48/129 
+  インストール中          : ncurses-devel-5.9-14.20130511.el7_4.x86_64                                                            49/129 
+  更新します              : tzdata-java-2021a-1.el7.noarch                                                                        50/129 
+  更新します              : copy-jdk-configs-3.3-10.el7_5.noarch                                                                  51/129 
+  更新します              : 1:java-1.8.0-openjdk-headless-1.8.0.292.b10-1.el7_9.x86_64                                            52/129 
+warning: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/jre/lib/net.properties created as /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/jre/lib/net.properties.rpmnew
+warning: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/jre/lib/security/blacklisted.certs created as /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/jre/lib/security/blacklisted.certs.rpmnew
+warning: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/jre/lib/security/java.policy created as /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/jre/lib/security/java.policy.rpmnew
+warning: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/jre/lib/security/java.security created as /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/jre/lib/security/java.security.rpmnew
+restored /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/jre/lib/security/blacklisted.certs.rpmnew to /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/jre/lib/security/blacklisted.certs
+restored /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/jre/lib/security/java.policy.rpmnew to /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/jre/lib/security/java.policy
+restored /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/jre/lib/security/java.security.rpmnew to /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/jre/lib/security/java.security
+restored /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/jre/lib/net.properties.rpmnew to /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64/jre/lib/net.properties
+  更新します              : 1:java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64                                                     53/129 
+  インストール中          : pcre-devel-8.32-17.el7.x86_64                                                                         54/129 
+  インストール中          : libselinux-devel-2.5-15.el7.x86_64                                                                    55/129 
+  インストール中          : libverto-devel-0.2.5-4.el7.x86_64                                                                     56/129 
+  インストール中          : keyutils-libs-devel-1.5.8-3.el7.x86_64                                                                57/129 
+  インストール中          : krb5-devel-1.15.1-50.el7.x86_64                                                                       58/129 
+  インストール中          : 1:openssl-devel-1.0.2k-21.el7_9.x86_64                                                                59/129 
+  インストール中          : 1:java-1.8.0-openjdk-devel-1.8.0.292.b10-1.el7_9.x86_64                                               60/129 
+  インストール中          : readline-devel-6.2-11.el7.x86_64                                                                      61/129 
+  更新します              : ncurses-5.9-14.20130511.el7_4.x86_64                                                                  62/129 
+  インストール中          : libXt-devel-1.1.5-3.el7.x86_64                                                                        63/129 
+  インストール中          : pcre2-devel-10.23-2.el7.x86_64                                                                        64/129 
+  更新します              : gcc-gfortran-4.8.5-44.el7.x86_64                                                                      65/129 
+  更新します              : gcc-c++-4.8.5-44.el7.x86_64                                                                           66/129 
+  更新します              : e2fsprogs-1.42.9-19.el7.x86_64                                                                        67/129 
+  更新します              : curl-7.29.0-59.el7_9.1.x86_64                                                                         68/129 
+  インストール中          : libcurl-devel-7.29.0-59.el7_9.1.x86_64                                                                69/129 
+  更新します              : nss-tools-3.53.1-7.el7_9.x86_64                                                                       70/129 
+  更新します              : krb5-workstation-1.15.1-50.el7.x86_64                                                                 71/129 
+  更新します              : 1:openssl-1.0.2k-21.el7_9.x86_64                                                                      72/129 
+  更新します              : wget-1.14-18.el7_6.1.x86_64                                                                           73/129 
+  更新します              : libselinux-utils-2.5-15.el7.x86_64                                                                    74/129 
+  更新します              : libselinux-python-2.5-15.el7.x86_64                                                                   75/129 
+  インストール中          : xz-devel-5.2.2-1.el7.x86_64                                                                           76/129 
+  インストール中          : bzip2-devel-1.0.6-13.el7.x86_64                                                                       77/129 
+  整理中                  : nss-tools-3.28.4-8.el7.x86_64                                                                         78/129 
+  整理中                  : curl-7.29.0-42.el7.x86_64                                                                             79/129 
+  整理中                  : libcurl-7.29.0-42.el7.x86_64                                                                          80/129 
+  整理中                  : krb5-workstation-1.15.1-8.el7.x86_64                                                                  81/129 
+  整理中                  : 1:openssl-1.0.2k-8.el7.x86_64                                                                         82/129 
+  整理中                  : gcc-gfortran-4.8.5-16.el7.x86_64                                                                      83/129 
+  整理中                  : 1:java-1.8.0-openjdk-1.8.0.131-11.b12.el7.x86_64                                                      84/129 
+  整理中                  : 1:java-1.8.0-openjdk-headless-1.8.0.131-11.b12.el7.x86_64                                             85/129 
+  整理中                  : nss-pem-1.0.3-4.el7.x86_64                                                                            86/129 
+  整理中                  : nss-sysinit-3.28.4-8.el7.x86_64                                                                       87/129 
+  整理中                  : nss-3.28.4-8.el7.x86_64                                                                               88/129 
+  整理中                  : nss-softokn-3.28.3-6.el7.x86_64                                                                       89/129 
+  整理中                  : gcc-c++-4.8.5-16.el7.x86_64                                                                           90/129 
+  整理中                  : libkadm5-1.15.1-8.el7.x86_64                                                                          91/129 
+  整理中                  : wget-1.14-15.el7.x86_64                                                                               92/129 
+  整理中                  : e2fsprogs-1.42.9-10.el7.x86_64                                                                        93/129 
+  整理中                  : nss-util-3.28.4-3.el7.x86_64                                                                          94/129 
+  整理中                  : libX11-1.6.5-1.el7.x86_64                                                                             95/129 
+  整理中                  : libgfortran-4.8.5-16.el7.x86_64                                                                       96/129 
+  整理中                  : libssh2-1.4.3-10.el7_2.1.x86_64                                                                       97/129 
+  整理中                  : 1:openssl-libs-1.0.2k-8.el7.x86_64                                                                    98/129 
+  整理中                  : krb5-libs-1.15.1-8.el7.x86_64                                                                         99/129 
+  整理中                  : libselinux-utils-2.5-11.el7.x86_64                                                                   100/129 
+  整理中                  : e2fsprogs-libs-1.42.9-10.el7.x86_64                                                                  101/129 
+  整理中                  : libss-1.42.9-10.el7.x86_64                                                                           102/129 
+  整理中                  : libselinux-python-2.5-11.el7.x86_64                                                                  103/129 
+  整理中                  : readline-6.2-10.el7.x86_64                                                                           104/129 
+  整理中                  : ncurses-5.9-13.20130511.el7.x86_64                                                                   105/129 
+  整理中                  : libquadmath-devel-4.8.5-16.el7.x86_64                                                                106/129 
+  整理中                  : libstdc++-devel-4.8.5-16.el7.x86_64                                                                  107/129 
+  整理中                  : libX11-common-1.6.5-1.el7.noarch                                                                     108/129 
+  整理中                  : copy-jdk-configs-2.2-3.el7.noarch                                                                    109/129 
+  整理中                  : tzdata-java-2017b-1.el7.noarch                                                                       110/129 
+  整理中                  : gcc-4.8.5-16.el7.x86_64                                                                              111/129 
+  整理中                  : ncurses-libs-5.9-13.20130511.el7.x86_64                                                              112/129 
+  整理中                  : glibc-devel-2.17-196.el7.x86_64                                                                      113/129 
+  整理中                  : libstdc++-4.8.5-16.el7.x86_64                                                                        114/129 
+  整理中                  : cpp-4.8.5-16.el7.x86_64                                                                              115/129 
+  整理中                  : glibc-headers-2.17-196.el7.x86_64                                                                    116/129 
+  整理中                  : zlib-1.2.7-17.el7.x86_64                                                                             117/129 
+  整理中                  : libgomp-4.8.5-16.el7.x86_64                                                                          118/129 
+  整理中                  : libquadmath-4.8.5-16.el7.x86_64                                                                      119/129 
+  整理中                  : libcom_err-1.42.9-10.el7.x86_64                                                                      120/129 
+  整理中                  : libxcb-1.12-1.el7.x86_64                                                                             121/129 
+  整理中                  : nspr-4.13.1-1.0.el7_3.x86_64                                                                         122/129 
+  整理中                  : ncurses-base-5.9-13.20130511.el7.noarch                                                              123/129 
+  整理中                  : libsepol-2.5-6.el7.x86_64                                                                            124/129 
+  整理中                  : libselinux-2.5-11.el7.x86_64                                                                         125/129 
+  整理中                  : glibc-common-2.17-196.el7.x86_64                                                                     126/129 
+  整理中                  : nss-softokn-freebl-3.28.3-6.el7.x86_64                                                               127/129 
+  整理中                  : glibc-2.17-196.el7.x86_64                                                                            128/129 
+  整理中                  : libgcc-4.8.5-16.el7.x86_64                                                                           129/129 
+  検証中                  : gcc-c++-4.8.5-44.el7.x86_64                                                                            1/129 
+  検証中                  : libcom_err-1.42.9-19.el7.x86_64                                                                        2/129 
+  検証中                  : glibc-headers-2.17-324.el7_9.x86_64                                                                    3/129 
+  検証中                  : nss-softokn-3.53.1-6.el7_9.x86_64                                                                      4/129 
+  検証中                  : nss-util-3.53.1-1.el7_9.x86_64                                                                         5/129 
+  検証中                  : 1:java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64                                                      6/129 
+  検証中                  : libkadm5-1.15.1-50.el7.x86_64                                                                          7/129 
+  検証中                  : bzip2-devel-1.0.6-13.el7.x86_64                                                                        8/129 
+  検証中                  : libssh2-1.8.0-4.el7.x86_64                                                                             9/129 
+  検証中                  : glibc-common-2.17-324.el7_9.x86_64                                                                    10/129 
+  検証中                  : xorg-x11-proto-devel-2018.4-1.el7.noarch                                                              11/129 
+  検証中                  : nspr-4.25.0-2.el7_9.x86_64                                                                            12/129 
+  検証中                  : cpp-4.8.5-44.el7.x86_64                                                                               13/129 
+  検証中                  : nss-pem-1.0.3-7.el7.x86_64                                                                            14/129 
+  検証中                  : 1:openssl-1.0.2k-21.el7_9.x86_64                                                                      15/129 
+  検証中                  : libselinux-utils-2.5-15.el7.x86_64                                                                    16/129 
+  検証中                  : libX11-1.6.7-3.el7_9.x86_64                                                                           17/129 
+  検証中                  : libcurl-7.29.0-59.el7_9.1.x86_64                                                                      18/129 
+  検証中                  : libsepol-devel-2.5-10.el7.x86_64                                                                      19/129 
+  検証中                  : 1:openssl-libs-1.0.2k-21.el7_9.x86_64                                                                 20/129 
+  検証中                  : libXt-devel-1.1.5-3.el7.x86_64                                                                        21/129 
+  検証中                  : libstdc++-4.8.5-44.el7.x86_64                                                                         22/129 
+  検証中                  : nss-3.53.1-7.el7_9.x86_64                                                                             23/129 
+  検証中                  : libgcc-4.8.5-44.el7.x86_64                                                                            24/129 
+  検証中                  : libXau-devel-1.0.8-2.1.el7.x86_64                                                                     25/129 
+  検証中                  : keyutils-libs-devel-1.5.8-3.el7.x86_64                                                                26/129 
+  検証中                  : ncurses-libs-5.9-14.20130511.el7_4.x86_64                                                             27/129 
+  検証中                  : e2fsprogs-1.42.9-19.el7.x86_64                                                                        28/129 
+  検証中                  : e2fsprogs-libs-1.42.9-19.el7.x86_64                                                                   29/129 
+  検証中                  : libquadmath-devel-4.8.5-44.el7.x86_64                                                                 30/129 
+  検証中                  : libICE-devel-1.0.9-9.el7.x86_64                                                                       31/129 
+  検証中                  : ncurses-5.9-14.20130511.el7_4.x86_64                                                                  32/129 
+  検証中                  : libgfortran-4.8.5-44.el7.x86_64                                                                       33/129 
+  検証中                  : 1:openssl-devel-1.0.2k-21.el7_9.x86_64                                                                34/129 
+  検証中                  : krb5-workstation-1.15.1-50.el7.x86_64                                                                 35/129 
+  検証中                  : libsepol-2.5-10.el7.x86_64                                                                            36/129 
+  検証中                  : nss-softokn-freebl-3.53.1-6.el7_9.x86_64                                                              37/129 
+  検証中                  : curl-7.29.0-59.el7_9.1.x86_64                                                                         38/129 
+  検証中                  : libverto-devel-0.2.5-4.el7.x86_64                                                                     39/129 
+  検証中                  : readline-6.2-11.el7.x86_64                                                                            40/129 
+  検証中                  : krb5-libs-1.15.1-50.el7.x86_64                                                                        41/129 
+  検証中                  : pcre2-utf32-10.23-2.el7.x86_64                                                                        42/129 
+  検証中                  : glibc-devel-2.17-324.el7_9.x86_64                                                                     43/129 
+  検証中                  : libgomp-4.8.5-44.el7.x86_64                                                                           44/129 
+  検証中                  : libselinux-devel-2.5-15.el7.x86_64                                                                    45/129 
+  検証中                  : zlib-1.2.7-19.el7_9.x86_64                                                                            46/129 
+  検証中                  : libselinux-2.5-15.el7.x86_64                                                                          47/129 
+  検証中                  : pcre-devel-8.32-17.el7.x86_64                                                                         48/129 
+  検証中                  : libX11-devel-1.6.7-3.el7_9.x86_64                                                                     49/129 
+  検証中                  : libSM-devel-1.2.2-2.el7.x86_64                                                                        50/129 
+  検証中                  : copy-jdk-configs-3.3-10.el7_5.noarch                                                                  51/129 
+  検証中                  : tzdata-java-2021a-1.el7.noarch                                                                        52/129 
+  検証中                  : ncurses-devel-5.9-14.20130511.el7_4.x86_64                                                            53/129 
+  検証中                  : libss-1.42.9-19.el7.x86_64                                                                            54/129 
+  検証中                  : pcre2-devel-10.23-2.el7.x86_64                                                                        55/129 
+  検証中                  : gcc-4.8.5-44.el7.x86_64                                                                               56/129 
+  検証中                  : zlib-devel-1.2.7-19.el7_9.x86_64                                                                      57/129 
+  検証中                  : libcurl-devel-7.29.0-59.el7_9.1.x86_64                                                                58/129 
+  検証中                  : pcre2-utf16-10.23-2.el7.x86_64                                                                        59/129 
+  検証中                  : xz-devel-5.2.2-1.el7.x86_64                                                                           60/129 
+  検証中                  : glibc-2.17-324.el7_9.x86_64                                                                           61/129 
+  検証中                  : krb5-devel-1.15.1-50.el7.x86_64                                                                       62/129 
+  検証中                  : libcom_err-devel-1.42.9-19.el7.x86_64                                                                 63/129 
+  検証中                  : wget-1.14-18.el7_6.1.x86_64                                                                           64/129 
+  検証中                  : ncurses-base-5.9-14.20130511.el7_4.noarch                                                             65/129 
+  検証中                  : nss-tools-3.53.1-7.el7_9.x86_64                                                                       66/129 
+  検証中                  : gcc-gfortran-4.8.5-44.el7.x86_64                                                                      67/129 
+  検証中                  : 1:java-1.8.0-openjdk-devel-1.8.0.292.b10-1.el7_9.x86_64                                               68/129 
+  検証中                  : libquadmath-4.8.5-44.el7.x86_64                                                                       69/129 
+  検証中                  : 1:java-1.8.0-openjdk-headless-1.8.0.292.b10-1.el7_9.x86_64                                            70/129 
+  検証中                  : libxcb-1.13-1.el7.x86_64                                                                              71/129 
+  検証中                  : nss-sysinit-3.53.1-7.el7_9.x86_64                                                                     72/129 
+  検証中                  : libX11-common-1.6.7-3.el7_9.noarch                                                                    73/129 
+  検証中                  : libselinux-python-2.5-15.el7.x86_64                                                                   74/129 
+  検証中                  : readline-devel-6.2-11.el7.x86_64                                                                      75/129 
+  検証中                  : libxcb-devel-1.13-1.el7.x86_64                                                                        76/129 
+  検証中                  : libstdc++-devel-4.8.5-44.el7.x86_64                                                                   77/129 
+  検証中                  : libcurl-7.29.0-42.el7.x86_64                                                                          78/129 
+  検証中                  : curl-7.29.0-42.el7.x86_64                                                                             79/129 
+  検証中                  : nss-util-3.28.4-3.el7.x86_64                                                                          80/129 
+  検証中                  : nss-sysinit-3.28.4-8.el7.x86_64                                                                       81/129 
+  検証中                  : glibc-headers-2.17-196.el7.x86_64                                                                     82/129 
+  検証中                  : libssh2-1.4.3-10.el7_2.1.x86_64                                                                       83/129 
+  検証中                  : libquadmath-4.8.5-16.el7.x86_64                                                                       84/129 
+  検証中                  : libsepol-2.5-6.el7.x86_64                                                                             85/129 
+  検証中                  : wget-1.14-15.el7.x86_64                                                                               86/129 
+  検証中                  : gcc-c++-4.8.5-16.el7.x86_64                                                                           87/129 
+  検証中                  : krb5-workstation-1.15.1-8.el7.x86_64                                                                  88/129 
+  検証中                  : nss-tools-3.28.4-8.el7.x86_64                                                                         89/129 
+  検証中                  : libcom_err-1.42.9-10.el7.x86_64                                                                       90/129 
+  検証中                  : nss-3.28.4-8.el7.x86_64                                                                               91/129 
+  検証中                  : krb5-libs-1.15.1-8.el7.x86_64                                                                         92/129 
+  検証中                  : glibc-common-2.17-196.el7.x86_64                                                                      93/129 
+  検証中                  : readline-6.2-10.el7.x86_64                                                                            94/129 
+  検証中                  : glibc-2.17-196.el7.x86_64                                                                             95/129 
+  検証中                  : libX11-1.6.5-1.el7.x86_64                                                                             96/129 
+  検証中                  : libselinux-utils-2.5-11.el7.x86_64                                                                    97/129 
+  検証中                  : libgfortran-4.8.5-16.el7.x86_64                                                                       98/129 
+  検証中                  : libxcb-1.12-1.el7.x86_64                                                                              99/129 
+  検証中                  : 1:java-1.8.0-openjdk-headless-1.8.0.131-11.b12.el7.x86_64                                            100/129 
+  検証中                  : copy-jdk-configs-2.2-3.el7.noarch                                                                    101/129 
+  検証中                  : libgomp-4.8.5-16.el7.x86_64                                                                          102/129 
+  検証中                  : e2fsprogs-libs-1.42.9-10.el7.x86_64                                                                  103/129 
+  検証中                  : nspr-4.13.1-1.0.el7_3.x86_64                                                                         104/129 
+  検証中                  : nss-pem-1.0.3-4.el7.x86_64                                                                           105/129 
+  検証中                  : libselinux-python-2.5-11.el7.x86_64                                                                  106/129 
+  検証中                  : 1:openssl-libs-1.0.2k-8.el7.x86_64                                                                   107/129 
+  検証中                  : glibc-devel-2.17-196.el7.x86_64                                                                      108/129 
+  検証中                  : gcc-gfortran-4.8.5-16.el7.x86_64                                                                     109/129 
+  検証中                  : tzdata-java-2017b-1.el7.noarch                                                                       110/129 
+  検証中                  : cpp-4.8.5-16.el7.x86_64                                                                              111/129 
+  検証中                  : 1:java-1.8.0-openjdk-1.8.0.131-11.b12.el7.x86_64                                                     112/129 
+  検証中                  : libX11-common-1.6.5-1.el7.noarch                                                                     113/129 
+  検証中                  : nss-softokn-freebl-3.28.3-6.el7.x86_64                                                               114/129 
+  検証中                  : libss-1.42.9-10.el7.x86_64                                                                           115/129 
+  検証中                  : libselinux-2.5-11.el7.x86_64                                                                         116/129 
+  検証中                  : gcc-4.8.5-16.el7.x86_64                                                                              117/129 
+  検証中                  : ncurses-base-5.9-13.20130511.el7.noarch                                                              118/129 
+  検証中                  : libkadm5-1.15.1-8.el7.x86_64                                                                         119/129 
+  検証中                  : libgcc-4.8.5-16.el7.x86_64                                                                           120/129 
+  検証中                  : 1:openssl-1.0.2k-8.el7.x86_64                                                                        121/129 
+  検証中                  : libstdc++-devel-4.8.5-16.el7.x86_64                                                                  122/129 
+  検証中                  : libstdc++-4.8.5-16.el7.x86_64                                                                        123/129 
+  検証中                  : zlib-1.2.7-17.el7.x86_64                                                                             124/129 
+  検証中                  : nss-softokn-3.28.3-6.el7.x86_64                                                                      125/129 
+  検証中                  : libquadmath-devel-4.8.5-16.el7.x86_64                                                                126/129 
+  検証中                  : e2fsprogs-1.42.9-10.el7.x86_64                                                                       127/129 
+  検証中                  : ncurses-5.9-13.20130511.el7.x86_64                                                                   128/129 
+  検証中                  : ncurses-libs-5.9-13.20130511.el7.x86_64                                                              129/129 
+
+インストール:
+  bzip2-devel.x86_64 0:1.0.6-13.el7          java-1.8.0-openjdk-devel.x86_64 1:1.8.0.292.b10-1.el7_9   libXt-devel.x86_64 0:1.1.5-3.el7  
+  libcurl-devel.x86_64 0:7.29.0-59.el7_9.1   openssl-devel.x86_64 1:1.0.2k-21.el7_9                    pcre-devel.x86_64 0:8.32-17.el7   
+  pcre2-devel.x86_64 0:10.23-2.el7           readline-devel.x86_64 0:6.2-11.el7                        xz-devel.x86_64 0:5.2.2-1.el7     
+  zlib-devel.x86_64 0:1.2.7-19.el7_9        
+
+依存性関連をインストールしました:
+  keyutils-libs-devel.x86_64 0:1.5.8-3.el7     krb5-devel.x86_64 0:1.15.1-50.el7        libICE-devel.x86_64 0:1.0.9-9.el7               
+  libSM-devel.x86_64 0:1.2.2-2.el7             libX11-devel.x86_64 0:1.6.7-3.el7_9      libXau-devel.x86_64 0:1.0.8-2.1.el7             
+  libcom_err-devel.x86_64 0:1.42.9-19.el7      libselinux-devel.x86_64 0:2.5-15.el7     libsepol-devel.x86_64 0:2.5-10.el7              
+  libverto-devel.x86_64 0:0.2.5-4.el7          libxcb-devel.x86_64 0:1.13-1.el7         ncurses-devel.x86_64 0:5.9-14.20130511.el7_4    
+  pcre2-utf16.x86_64 0:10.23-2.el7             pcre2-utf32.x86_64 0:10.23-2.el7         xorg-x11-proto-devel.noarch 0:2018.4-1.el7      
+
+更新:
+  gcc.x86_64 0:4.8.5-44.el7                 gcc-c++.x86_64 0:4.8.5-44.el7                         gcc-gfortran.x86_64 0:4.8.5-44.el7    
+  glibc-headers.x86_64 0:2.17-324.el7_9     java-1.8.0-openjdk.x86_64 1:1.8.0.292.b10-1.el7_9     libgfortran.x86_64 0:4.8.5-44.el7     
+  wget.x86_64 0:1.14-18.el7_6.1            
+
+依存性を更新しました:
+  copy-jdk-configs.noarch 0:3.3-10.el7_5                                     cpp.x86_64 0:4.8.5-44.el7                                  
+  curl.x86_64 0:7.29.0-59.el7_9.1                                            e2fsprogs.x86_64 0:1.42.9-19.el7                           
+  e2fsprogs-libs.x86_64 0:1.42.9-19.el7                                      glibc.x86_64 0:2.17-324.el7_9                              
+  glibc-common.x86_64 0:2.17-324.el7_9                                       glibc-devel.x86_64 0:2.17-324.el7_9                        
+  java-1.8.0-openjdk-headless.x86_64 1:1.8.0.292.b10-1.el7_9                 krb5-libs.x86_64 0:1.15.1-50.el7                           
+  krb5-workstation.x86_64 0:1.15.1-50.el7                                    libX11.x86_64 0:1.6.7-3.el7_9                              
+  libX11-common.noarch 0:1.6.7-3.el7_9                                       libcom_err.x86_64 0:1.42.9-19.el7                          
+  libcurl.x86_64 0:7.29.0-59.el7_9.1                                         libgcc.x86_64 0:4.8.5-44.el7                               
+  libgomp.x86_64 0:4.8.5-44.el7                                              libkadm5.x86_64 0:1.15.1-50.el7                            
+  libquadmath.x86_64 0:4.8.5-44.el7                                          libquadmath-devel.x86_64 0:4.8.5-44.el7                    
+  libselinux.x86_64 0:2.5-15.el7                                             libselinux-python.x86_64 0:2.5-15.el7                      
+  libselinux-utils.x86_64 0:2.5-15.el7                                       libsepol.x86_64 0:2.5-10.el7                               
+  libss.x86_64 0:1.42.9-19.el7                                               libssh2.x86_64 0:1.8.0-4.el7                               
+  libstdc++.x86_64 0:4.8.5-44.el7                                            libstdc++-devel.x86_64 0:4.8.5-44.el7                      
+  libxcb.x86_64 0:1.13-1.el7                                                 ncurses.x86_64 0:5.9-14.20130511.el7_4                     
+  ncurses-base.noarch 0:5.9-14.20130511.el7_4                                ncurses-libs.x86_64 0:5.9-14.20130511.el7_4                
+  nspr.x86_64 0:4.25.0-2.el7_9                                               nss.x86_64 0:3.53.1-7.el7_9                                
+  nss-pem.x86_64 0:1.0.3-7.el7                                               nss-softokn.x86_64 0:3.53.1-6.el7_9                        
+  nss-softokn-freebl.x86_64 0:3.53.1-6.el7_9                                 nss-sysinit.x86_64 0:3.53.1-7.el7_9                        
+  nss-tools.x86_64 0:3.53.1-7.el7_9                                          nss-util.x86_64 0:3.53.1-1.el7_9                           
+  openssl.x86_64 1:1.0.2k-21.el7_9                                           openssl-libs.x86_64 1:1.0.2k-21.el7_9                      
+  readline.x86_64 0:6.2-11.el7                                               tzdata-java.noarch 0:2021a-1.el7                           
+  zlib.x86_64 0:1.2.7-19.el7_9                                              
+
+完了しました!
+[root@localhost ~]# 
+
+

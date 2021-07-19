@@ -1,0 +1,6 @@
+02_インストール先・ファイル格納ディレクトリの作成
+
+[root@localhost ~]# mkdir -p /usr/local/pkg/R/4.1.0_1
+[root@localhost ~]# mkdir /home/work
+[root@localhost ~]# cd /home/work/
+

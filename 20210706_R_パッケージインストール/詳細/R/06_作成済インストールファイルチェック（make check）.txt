@@ -1,0 +1,101 @@
+06_作成済インストールファイルチェック（make check）
+
+[root@localhost R-4.1.0]# 
+[root@localhost R-4.1.0]# make check
+make[1]: ディレクトリ `/home/work/R-4.1.0/tests' に入ります
+make[2]: ディレクトリ `/home/work/R-4.1.0/tests' に入ります
+make[3]: ディレクトリ `/home/work/R-4.1.0/tests/Examples' に入ります
+Testing examples for package ‘base’
+Testing examples for package ‘tools’
+  comparing ‘tools-Ex.Rout’ to ‘tools-Ex.Rout.save’ ... OK
+Testing examples for package ‘utils’
+Testing examples for package ‘grDevices’
+  comparing ‘grDevices-Ex.Rout’ to ‘grDevices-Ex.Rout.save’ ... OK
+Testing examples for package ‘graphics’
+  comparing ‘graphics-Ex.Rout’ to ‘graphics-Ex.Rout.save’ ... OK
+Testing examples for package ‘stats’
+  comparing ‘stats-Ex.Rout’ to ‘stats-Ex.Rout.save’ ... OK
+Testing examples for package ‘datasets’
+  comparing ‘datasets-Ex.Rout’ to ‘datasets-Ex.Rout.save’ ... OK
+Testing examples for package ‘methods’
+Testing examples for package ‘grid’
+  comparing ‘grid-Ex.Rout’ to ‘grid-Ex.Rout.save’ ... OK
+Testing examples for package ‘splines’
+  comparing ‘splines-Ex.Rout’ to ‘splines-Ex.Rout.save’ ... OK
+Testing examples for package ‘stats4’
+  comparing ‘stats4-Ex.Rout’ to ‘stats4-Ex.Rout.save’ ... OK
+Testing examples for package ‘tcltk’
+Testing examples for package ‘compiler’
+Testing examples for package ‘parallel’
+make[3]: ディレクトリ `/home/work/R-4.1.0/tests/Examples' から出ます
+make[2]: ディレクトリ `/home/work/R-4.1.0/tests' から出ます
+make[2]: ディレクトリ `/home/work/R-4.1.0/tests' に入ります
+running strict specific tests
+make[3]: ディレクトリ `/home/work/R-4.1.0/tests' に入ります
+running code in 'eval-etc.R' ... OK
+  comparing 'eval-etc.Rout' to './eval-etc.Rout.save' ... OK
+running code in 'simple-true.R' ... OK
+  comparing 'simple-true.Rout' to './simple-true.Rout.save' ... OK
+running code in 'arith-true.R' ... OK
+  comparing 'arith-true.Rout' to './arith-true.Rout.save' ... OK
+running code in 'arith.R' ... OK
+  comparing 'arith.Rout' to './arith.Rout.save' ... OK
+running code in 'lm-tests.R' ... OK
+  comparing 'lm-tests.Rout' to './lm-tests.Rout.save' ... OK
+running code in 'ok-errors.R' ... OK
+  comparing 'ok-errors.Rout' to './ok-errors.Rout.save' ... OK
+running code in 'method-dispatch.R' ... OK
+  comparing 'method-dispatch.Rout' to './method-dispatch.Rout.save' ... OK
+running code in 'any-all.R' ... OK
+  comparing 'any-all.Rout' to './any-all.Rout.save' ... OK
+running code in 'd-p-q-r-tests.R' ... OK
+  comparing 'd-p-q-r-tests.Rout' to './d-p-q-r-tests.Rout.save' ... OK
+make[3]: ディレクトリ `/home/work/R-4.1.0/tests' から出ます
+running sloppy specific tests
+make[3]: ディレクトリ `/home/work/R-4.1.0/tests' に入ります
+running code in 'complex.R' ... OK
+  comparing 'complex.Rout' to './complex.Rout.save' ... OK
+running code in 'eval-etc-2.R' ... OK
+  comparing 'eval-etc-2.Rout' to './eval-etc-2.Rout.save' ... OK
+running code in 'print-tests.R' ... OK
+  comparing 'print-tests.Rout' to './print-tests.Rout.save' ... OK
+running code in 'lapack.R' ... OK
+  comparing 'lapack.Rout' to './lapack.Rout.save' ... OK
+running code in 'datasets.R' ... OK
+  comparing 'datasets.Rout' to './datasets.Rout.save' ... OK
+running code in 'datetime.R' ... OK
+  comparing 'datetime.Rout' to './datetime.Rout.save' ... OK
+running code in 'iec60559.R' ... OK
+  comparing 'iec60559.Rout' to './iec60559.Rout.save' ... OK
+make[3]: ディレクトリ `/home/work/R-4.1.0/tests' から出ます
+make[3]: ディレクトリ `/home/work/R-4.1.0/tests' に入ります
+checking Sys.timezone ...
+make[4]: ディレクトリ `/home/work/R-4.1.0/tests' に入ります
+running code in 'timezone.R' ... OK
+make[4]: ディレクトリ `/home/work/R-4.1.0/tests' から出ます
+make[3]: ディレクトリ `/home/work/R-4.1.0/tests' から出ます
+make[2]: ディレクトリ `/home/work/R-4.1.0/tests' から出ます
+make[2]: ディレクトリ `/home/work/R-4.1.0/tests' に入ります
+running regression tests ...
+make[3]: ディレクトリ `/home/work/R-4.1.0/tests' に入ります
+running code in 'array-subset.R' ... OK
+running code in 'reg-tests-1a.R' ... OK
+running code in 'reg-tests-1b.R' ... OK
+running code in 'reg-tests-1c.R' ... OK
+running code in 'reg-tests-1d.R' ... OK
+running code in 'reg-tests-2.R' ... OK
+  comparing 'reg-tests-2.Rout' to './reg-tests-2.Rout.save' ... OK
+running code in 'reg-examples1.R' ... OK
+running code in 'reg-examples2.R' ... OK
+running code in 'reg-packages.R' ...make[3]: *** [reg-packages.Rout] エラー 1
+make[3]: ディレクトリ `/home/work/R-4.1.0/tests' から出ます
+make[2]: *** [test-Reg] エラー 2
+make[2]: ディレクトリ `/home/work/R-4.1.0/tests' から出ます
+make[1]: *** [test-all-basics] エラー 1
+make[1]: ディレクトリ `/home/work/R-4.1.0/tests' から出ます
+make: *** [check] エラー 2
+[root@localhost R-4.1.0]# 
+
+
+※権限の無いユーザなどでテストしているのでエラーが発生している模様。
+　規定動作。

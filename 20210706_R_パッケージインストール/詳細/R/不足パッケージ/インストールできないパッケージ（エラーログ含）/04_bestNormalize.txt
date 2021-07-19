@@ -1,0 +1,80 @@
+> install.packages("bestNormalize")
+ 依存対象 (dependency) ‘gert’, ‘usethis’, ‘butcher’ もインストールします 
+
+ URL 'https://cran.ism.ac.jp/src/contrib/gert_1.3.1.tar.gz' を試しています 
+Content type 'application/x-gzip' length 66767 bytes (65 KB)
+==================================================
+downloaded 65 KB
+
+ URL 'https://cran.ism.ac.jp/src/contrib/usethis_2.0.1.tar.gz' を試しています 
+Content type 'application/x-gzip' length 306090 bytes (298 KB)
+==================================================
+downloaded 298 KB
+
+ URL 'https://cran.ism.ac.jp/src/contrib/butcher_0.1.5.tar.gz' を試しています 
+Content type 'application/x-gzip' length 290222 bytes (283 KB)
+==================================================
+downloaded 283 KB
+
+ URL 'https://cran.ism.ac.jp/src/contrib/bestNormalize_1.8.0.tar.gz' を試しています 
+Content type 'application/x-gzip' length 1130396 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+* installing *source* package ‘gert’ ...
+** package ‘gert’ successfully unpacked and MD5 sums checked
+** using staged installation
+> curl::curl_download("https://r-lib.github.io/gert/get-libgit2-linux.sh","get-libgit2-linux.sh")
+> 
+> 
+> curl::curl_download('https://r-lib.github.io/gert/libgit2-1.1.0.x86_64_legacy-linux.tar.gz','bundle.tar.gz')
+> 
+> 
+Using static libgit2-1.1.0 for Linux x86_64
+Using PKG_CFLAGS=-DSTATIC_LIBGIT2 -I/tmp/Rtmp1v0oH4/R.INSTALL32e826a0823a/gert/libgit2/include
+Using PKG_LIBS=-L/tmp/Rtmp1v0oH4/R.INSTALL32e826a0823a/gert/libgit2/lib -lgit2 -lrt -lpthread -lssh2 -lssl -lcrypto -ldl -lpcre -lz
+Configuration OK!
+** libs
+rm -f gert.so branch.o clone.o commit.o config.o conflicts.o files.o init.o merge.o rebase.o stash.o submodules.o tag.o utils.o version.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DSTATIC_LIBGIT2 -I/tmp/Rtmp1v0oH4/R.INSTALL32e826a0823a/gert/libgit2/include -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include  -fvisibility=hidden -fpic  -g -O2  -c branch.c -o branch.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DSTATIC_LIBGIT2 -I/tmp/Rtmp1v0oH4/R.INSTALL32e826a0823a/gert/libgit2/include -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include  -fvisibility=hidden -fpic  -g -O2  -c clone.c -o clone.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DSTATIC_LIBGIT2 -I/tmp/Rtmp1v0oH4/R.INSTALL32e826a0823a/gert/libgit2/include -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include  -fvisibility=hidden -fpic  -g -O2  -c commit.c -o commit.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DSTATIC_LIBGIT2 -I/tmp/Rtmp1v0oH4/R.INSTALL32e826a0823a/gert/libgit2/include -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include  -fvisibility=hidden -fpic  -g -O2  -c config.c -o config.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DSTATIC_LIBGIT2 -I/tmp/Rtmp1v0oH4/R.INSTALL32e826a0823a/gert/libgit2/include -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include  -fvisibility=hidden -fpic  -g -O2  -c conflicts.c -o conflicts.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DSTATIC_LIBGIT2 -I/tmp/Rtmp1v0oH4/R.INSTALL32e826a0823a/gert/libgit2/include -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include  -fvisibility=hidden -fpic  -g -O2  -c files.c -o files.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DSTATIC_LIBGIT2 -I/tmp/Rtmp1v0oH4/R.INSTALL32e826a0823a/gert/libgit2/include -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include  -fvisibility=hidden -fpic  -g -O2  -c init.c -o init.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DSTATIC_LIBGIT2 -I/tmp/Rtmp1v0oH4/R.INSTALL32e826a0823a/gert/libgit2/include -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include  -fvisibility=hidden -fpic  -g -O2  -c merge.c -o merge.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DSTATIC_LIBGIT2 -I/tmp/Rtmp1v0oH4/R.INSTALL32e826a0823a/gert/libgit2/include -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include  -fvisibility=hidden -fpic  -g -O2  -c rebase.c -o rebase.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DSTATIC_LIBGIT2 -I/tmp/Rtmp1v0oH4/R.INSTALL32e826a0823a/gert/libgit2/include -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include  -fvisibility=hidden -fpic  -g -O2  -c stash.c -o stash.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DSTATIC_LIBGIT2 -I/tmp/Rtmp1v0oH4/R.INSTALL32e826a0823a/gert/libgit2/include -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include  -fvisibility=hidden -fpic  -g -O2  -c submodules.c -o submodules.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DSTATIC_LIBGIT2 -I/tmp/Rtmp1v0oH4/R.INSTALL32e826a0823a/gert/libgit2/include -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include  -fvisibility=hidden -fpic  -g -O2  -c tag.c -o tag.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DSTATIC_LIBGIT2 -I/tmp/Rtmp1v0oH4/R.INSTALL32e826a0823a/gert/libgit2/include -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include  -fvisibility=hidden -fpic  -g -O2  -c utils.c -o utils.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DSTATIC_LIBGIT2 -I/tmp/Rtmp1v0oH4/R.INSTALL32e826a0823a/gert/libgit2/include -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include  -fvisibility=hidden -fpic  -g -O2  -c version.c -o version.o
+gcc -std=gnu99 -shared -L/usr/local/lib64 -o gert.so branch.o clone.o commit.o config.o conflicts.o files.o init.o merge.o rebase.o stash.o submodules.o tag.o utils.o version.o -L/tmp/Rtmp1v0oH4/R.INSTALL32e826a0823a/gert/libgit2/lib -lgit2 -lrt -lpthread -lssh2 -lssl -lcrypto -ldl -lpcre -lz
+/usr/bin/ld: /tmp/Rtmp1v0oH4/R.INSTALL32e826a0823a/gert/libgit2/lib/libgit2.a(annotated_commit.c.o): 認識できない再配置 (0x2a) がセクション `.text' にあります
+/usr/bin/ld: 最終リンクに失敗しました: 不正な値です
+collect2: エラー: ld はステータス 1 で終了しました
+make: *** [gert.so] エラー 1
+ERROR: compilation failed for package ‘gert’
+* removing ‘/usr/local/pkg/R/4.1.0_1/lib64/R/library/gert’
+ERROR: dependency ‘gert’ is not available for package ‘usethis’
+* removing ‘/usr/local/pkg/R/4.1.0_1/lib64/R/library/usethis’
+ERROR: dependency ‘usethis’ is not available for package ‘butcher’
+* removing ‘/usr/local/pkg/R/4.1.0_1/lib64/R/library/butcher’
+ERROR: dependency ‘butcher’ is not available for package ‘bestNormalize’
+* removing ‘/usr/local/pkg/R/4.1.0_1/lib64/R/library/bestNormalize’
+
+The downloaded source packages are in
+	‘/tmp/Rtmpg7VRpy/downloaded_packages’
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+ 警告メッセージ: 
+1:  install.packages("bestNormalize") で: 
+  installation of package ‘gert’ had non-zero exit status
+2:  install.packages("bestNormalize") で: 
+  installation of package ‘usethis’ had non-zero exit status
+3:  install.packages("bestNormalize") で: 
+  installation of package ‘butcher’ had non-zero exit status
+4:  install.packages("bestNormalize") で: 
+  installation of package ‘bestNormalize’ had non-zero exit status
+>

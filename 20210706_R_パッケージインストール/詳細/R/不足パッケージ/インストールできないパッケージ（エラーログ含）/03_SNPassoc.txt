@@ -1,0 +1,117 @@
+> install.packages("SNPassoc")
+ 警告:   依存対象 (dependency) ‘BiocStyle’ が利用できません 
+ 依存対象 (dependency) ‘png’, ‘jpeg’, ‘latticeExtra’, ‘Hmisc’, ‘rms’, ‘haplo.stats’, ‘poisbinom’ もインストールします 
+
+ URL 'https://cran.ism.ac.jp/src/contrib/png_0.1-7.tar.gz' を試しています 
+Content type 'application/x-gzip' length 24990 bytes (24 KB)
+==================================================
+downloaded 24 KB
+
+ URL 'https://cran.ism.ac.jp/src/contrib/jpeg_0.1-8.1.tar.gz' を試しています 
+Content type 'application/x-gzip' length 18116 bytes (17 KB)
+==================================================
+downloaded 17 KB
+
+ URL 'https://cran.ism.ac.jp/src/contrib/latticeExtra_0.6-29.tar.gz' を試しています 
+Content type 'application/x-gzip' length 1292315 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+ URL 'https://cran.ism.ac.jp/src/contrib/Hmisc_4.5-0.tar.gz' を試しています 
+Content type 'application/x-gzip' length 775444 bytes (757 KB)
+==================================================
+downloaded 757 KB
+
+ URL 'https://cran.ism.ac.jp/src/contrib/rms_6.2-0.tar.gz' を試しています 
+Content type 'application/x-gzip' length 575287 bytes (561 KB)
+==================================================
+downloaded 561 KB
+
+ URL 'https://cran.ism.ac.jp/src/contrib/haplo.stats_1.8.6.tar.gz' を試しています 
+Content type 'application/x-gzip' length 2755497 bytes (2.6 MB)
+==================================================
+downloaded 2.6 MB
+
+ URL 'https://cran.ism.ac.jp/src/contrib/poisbinom_1.0.1.tar.gz' を試しています 
+Content type 'application/x-gzip' length 4403 bytes
+==================================================
+downloaded 4403 bytes
+
+ URL 'https://cran.ism.ac.jp/src/contrib/SNPassoc_2.0-2.tar.gz' を試しています 
+Content type 'application/x-gzip' length 1178471 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+* installing *source* package ‘png’ ...
+** package ‘png’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG   -I/usr/local/include   `libpng-config --cflags` -fpic  -g -O2  -c read.c -o read.o
+/bin/sh: libpng-config: コマンドが見つかりません
+read.c:3:17: 致命的エラー: png.h: そのようなファイルやディレクトリはありません
+ #include <png.h>
+                 ^
+コンパイルを停止しました。
+make: *** [read.o] エラー 1
+ERROR: compilation failed for package ‘png’
+* removing ‘/usr/local/pkg/R/4.1.0_1/lib64/R/library/png’
+* installing *source* package ‘jpeg’ ...
+** package ‘jpeg’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG   -I/usr/local/include   -fpic  -g -O2  -c read.c -o read.o
+In file included from read.c:1:0:
+rjcommon.h:11:21: 致命的エラー: jpeglib.h: そのようなファイルやディレクトリはありません
+ #include <jpeglib.h>
+                     ^
+コンパイルを停止しました。
+make: *** [read.o] エラー 1
+ERROR: compilation failed for package ‘jpeg’
+* removing ‘/usr/local/pkg/R/4.1.0_1/lib64/R/library/jpeg’
+* installing *source* package ‘poisbinom’ ...
+** package ‘poisbinom’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG  -I'/usr/local/pkg/R/4.1.0_1/lib64/R/library/Rcpp/include' -I/usr/local/include   -fpic  -g -O2  -c RcppExports.cpp -o RcppExports.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG  -I'/usr/local/pkg/R/4.1.0_1/lib64/R/library/Rcpp/include' -I/usr/local/include   -fpic  -g -O2  -c init.c -o init.o
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG  -I'/usr/local/pkg/R/4.1.0_1/lib64/R/library/Rcpp/include' -I/usr/local/include   -fpic  -g -O2  -c poisbinom.cpp -o poisbinom.o
+poisbinom.cpp:3:19: 致命的エラー: fftw3.h: そのようなファイルやディレクトリはありません
+ #include <fftw3.h>
+                   ^
+コンパイルを停止しました。
+make: *** [poisbinom.o] エラー 1
+ERROR: compilation failed for package ‘poisbinom’
+* removing ‘/usr/local/pkg/R/4.1.0_1/lib64/R/library/poisbinom’
+ERROR: dependencies ‘png’, ‘jpeg’ are not available for package ‘latticeExtra’
+* removing ‘/usr/local/pkg/R/4.1.0_1/lib64/R/library/latticeExtra’
+ERROR: dependency ‘latticeExtra’ is not available for package ‘Hmisc’
+* removing ‘/usr/local/pkg/R/4.1.0_1/lib64/R/library/Hmisc’
+ERROR: dependency ‘Hmisc’ is not available for package ‘rms’
+* removing ‘/usr/local/pkg/R/4.1.0_1/lib64/R/library/rms’
+ERROR: dependency ‘rms’ is not available for package ‘haplo.stats’
+* removing ‘/usr/local/pkg/R/4.1.0_1/lib64/R/library/haplo.stats’
+ERROR: dependencies ‘haplo.stats’, ‘BiocStyle’, ‘poisbinom’ are not available for package ‘SNPassoc’
+* removing ‘/usr/local/pkg/R/4.1.0_1/lib64/R/library/SNPassoc’
+
+The downloaded source packages are in
+	‘/tmp/Rtmpg7VRpy/downloaded_packages’
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+ 警告メッセージ: 
+1:  install.packages("SNPassoc") で: 
+  installation of package ‘png’ had non-zero exit status
+2:  install.packages("SNPassoc") で: 
+  installation of package ‘jpeg’ had non-zero exit status
+3:  install.packages("SNPassoc") で: 
+  installation of package ‘poisbinom’ had non-zero exit status
+4:  install.packages("SNPassoc") で: 
+  installation of package ‘latticeExtra’ had non-zero exit status
+5:  install.packages("SNPassoc") で: 
+  installation of package ‘Hmisc’ had non-zero exit status
+6:  install.packages("SNPassoc") で: 
+  installation of package ‘rms’ had non-zero exit status
+7:  install.packages("SNPassoc") で: 
+  installation of package ‘haplo.stats’ had non-zero exit status
+8:  install.packages("SNPassoc") で: 
+  installation of package ‘SNPassoc’ had non-zero exit status
+> 

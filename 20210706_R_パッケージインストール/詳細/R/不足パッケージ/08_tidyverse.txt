@@ -1,0 +1,29 @@
+> install.packages("tidyverse")
+ URL 'https://cran.ism.ac.jp/src/contrib/tidyverse_1.3.1.tar.gz' を試しています 
+Content type 'application/x-gzip' length 702779 bytes (686 KB)
+==================================================
+downloaded 686 KB
+
+* installing *source* package ‘tidyverse’ ...
+** package ‘tidyverse’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (tidyverse)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp8atBOQ/downloaded_packages’
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+> packageVersion("tidyverse")
+[1] ‘1.3.1’
+> 

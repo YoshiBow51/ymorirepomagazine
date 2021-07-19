@@ -1,0 +1,103 @@
+★R言語 CentOS7 ソースコードインストール
+
+〇R言語 4系ソース(CRAN)
+https://cran.r-project.org/src/base/R-4/
+
+
+〇必要なミドルウェアパッケージ/依存関係等（/usr/local/pkgじゃなくてyumで良い）
+
+#共通参照情報です
+https://qiita.com/quicksort/items/1fdad2dcd3cd94127eff
+https://stats.biopapyrus.jp/r/devel/r-install.html
+https://web.chaperone.jp/w/index.php?RStudio/R4
+
+------
+# sudo yum install wget gcc gcc-c++ gcc-gfortran glibc-headers bzip2 bzip2-devel java-1.8.0-openjdk java-1.8.0-openjdk-devel libcurl-devel libgfortran libXt-devel openssl-devel pcre pcre-devel pcre2-devel readline-devel xz xz-devel zlib-devel -y
+------
+
+#以下分割詳細
+
+sudo yum install wget 
+gcc 
+gcc-c++ 
+gcc-gfortran 
+glibc-headers
+bzip2 
+bzip2-devel 
+java-1.8.0-openjdk 
+java-1.8.0-openjdk-devel 
+libcurl-devel 
+libgfortran 
+libXt-devel
+openssl-devel 
+pcre 
+pcre-devel 
+pcre2-devel
+readline-devel
+xz 
+xz-devel 
+zlib-devel 
+
+-y
+
+
+〇R本体（CRANから）ダウンロード・展開
+------
+wget https://cloud.r-project.org/src/base/R-4/R-4.1.0.tar.gz
+------
+#tar xzvf R-4.1.0.tar.gz
+
+
+〇インストール（/usr/local/pkg/R/4.1.0_1）
+#cd R-4.1.0
+#./configure --prefix=/usr/local/pkg/R/4.1.0_1
+#make
+#make check
+#make install
+
+
+
+★苦節めも
+
+./configure --prefix=/usr/local/pkg/R/4.1.0_1 --with-x=no --with-pcre1 --enable-R-shlib
+
+./configure --prefix=/usr/local/pkg/R/4.1.0 --enable-R-shlib
+
+
+
+wget https://zlib.net/zlib-1.2.11.tar.gz
+
+
+./configure --prefix=/opt/R-4.1.0   --enable-R-shlib
+
+./configure --prefix=/usr/local/pkg/PCRE/8.40
+
+export PATH=/usr/local/pkg/PCRE/8.40bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/pkg/PCRE/8.40/lib:$LD_LIBRARY_PATH 
+source /etc/profile
+
+
+./configure --prefix=/usr/local/pkg/R/4.1.0 --enable-R-shlib --with-pcre1
+
+export LC_ALL="zh_JP.UTF-8"
+
+export LANG=ja_JP.UTF-8 
+export LC_ALL="ja_JP.
+
+./configure --prefix=/usr/local/pkg/PCRE/8.40 --enable-utf8
+
+./configure --prefix=/usr/local/pkg/curl/7.61.0
+
+PATH="$/usr/local/pkg/curl/7.61.0/bin:${PATH}" 
+
+export PATH=/usr/local/pkg/PCRE/8.40bin:$PATH
+
+
+wget https://cloud.r-project.org/src/base/R-4/R-4.1.0.tar.gz
+
+
+
+
+export PATH=/usr/local/pkg/R/4.1.0_1/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/pkg/PCRE/8.40/lib:$LD_LIBRARY_PATH 
+source /etc/profile

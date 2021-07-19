@@ -1,0 +1,231 @@
+■SNPRelate
+
+> BiocManager::install("SNPRelate")
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'?repositories' for details
+
+replacement repositories:
+    CRAN: https://cran.ism.ac.jp
+
+Bioconductor version 3.13 (BiocManager 1.30.16), R 4.1.0 (2021-05-18)
+Installing package(s) 'BiocVersion', 'SNPRelate'
+ 依存対象 (dependency) ‘gdsfmt’ もインストールします 
+
+ URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/gdsfmt_1.28.0.tar.gz' を試しています 
+Content type 'application/x-gzip' length 3011606 bytes (2.9 MB)
+==================================================
+downloaded 2.9 MB
+
+ URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/BiocVersion_3.13.1.tar.gz' を試しています 
+Content type 'application/x-gzip' length 985 bytes
+==================================================
+downloaded 985 bytes
+
+ URL 'https://bioconductor.org/packages/3.13/bioc/src/contrib/SNPRelate_1.26.0.tar.gz' を試しています 
+Content type 'application/x-gzip' length 3192998 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+* installing *source* package ‘gdsfmt’ ...
+** using staged installation
+** libs
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c R_CoreArray.cpp -o R_CoreArray.o
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c gdsfmt.cpp -o gdsfmt.o
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c digest.cpp -o digest.o
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c CoreArray/CoreArray.cpp -o CoreArray/CoreArray.o
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c CoreArray/dAllocator.cpp -o CoreArray/dAllocator.o
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c CoreArray/dAny.cpp -o CoreArray/dAny.o
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c CoreArray/dBase.cpp -o CoreArray/dBase.o
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c CoreArray/dBitGDS.cpp -o CoreArray/dBitGDS.o
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c CoreArray/dEndian.cpp -o CoreArray/dEndian.o
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c CoreArray/dFile.cpp -o CoreArray/dFile.o
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c CoreArray/dParallel.cpp -o CoreArray/dParallel.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c CoreArray/dParallel_Ext.c -o CoreArray/dParallel_Ext.o
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c CoreArray/dPlatform.cpp -o CoreArray/dPlatform.o
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c CoreArray/dRealGDS.cpp -o CoreArray/dRealGDS.o
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c CoreArray/dSerial.cpp -o CoreArray/dSerial.o
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c CoreArray/dStrGDS.cpp -o CoreArray/dStrGDS.o
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c CoreArray/dStream.cpp -o CoreArray/dStream.o
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c CoreArray/dStruct.cpp -o CoreArray/dStruct.o
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c CoreArray/dVLIntGDS.cpp -o CoreArray/dVLIntGDS.o
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c CoreArray/dSparse.cpp -o CoreArray/dSparse.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c ZLIB/adler32.c -o ZLIB/adler32.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c ZLIB/compress.c -o ZLIB/compress.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c ZLIB/crc32.c -o ZLIB/crc32.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c ZLIB/deflate.c -o ZLIB/deflate.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c ZLIB/infback.c -o ZLIB/infback.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c ZLIB/inffast.c -o ZLIB/inffast.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c ZLIB/inflate.c -o ZLIB/inflate.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c ZLIB/inftrees.c -o ZLIB/inftrees.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c ZLIB/trees.c -o ZLIB/trees.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c ZLIB/uncompr.c -o ZLIB/uncompr.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c ZLIB/zutil.c -o ZLIB/zutil.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c LZ4/lz4.c -o LZ4/lz4.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c LZ4/lz4hc.c -o LZ4/lz4hc.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c LZ4/lz4frame.c -o LZ4/lz4frame.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -D_FILE_OFFSET_BITS=64 -I../inst/include -ICoreArray  -I/usr/local/include   -fpic  -g -O2  -c LZ4/xxhash.c -o LZ4/xxhash.o
+cd XZ && tar -xzf xz-5.2.5.tar.gz
+cd XZ/xz-5.2.5 && \
+	./configure CC="gcc -std=gnu99" CPP="gcc -std=gnu99 -E" CXX="g++ -std=gnu++11" CXXCPP="" --build="" \
+	--with-pic --enable-silent-rules --quiet --disable-xz > /dev/null
+cd XZ/xz-5.2.5/src/liblzma && make
+make[1]: ディレクトリ `/tmp/RtmpV1LzAm/R.INSTALL15d9735ccffd/gdsfmt/src/XZ/xz-5.2.5/src/liblzma' に入ります
+Making all in api
+make[2]: ディレクトリ `/tmp/RtmpV1LzAm/R.INSTALL15d9735ccffd/gdsfmt/src/XZ/xz-5.2.5/src/liblzma/api' に入ります
+make[2]: `all' に対して行うべき事はありません.
+make[2]: ディレクトリ `/tmp/RtmpV1LzAm/R.INSTALL15d9735ccffd/gdsfmt/src/XZ/xz-5.2.5/src/liblzma/api' から出ます
+make[2]: ディレクトリ `/tmp/RtmpV1LzAm/R.INSTALL15d9735ccffd/gdsfmt/src/XZ/xz-5.2.5/src/liblzma' に入ります
+  CC       liblzma_la-tuklib_physmem.lo
+  CC       liblzma_la-tuklib_cpucores.lo
+  CC       liblzma_la-common.lo
+  CC       liblzma_la-block_util.lo
+  CC       liblzma_la-easy_preset.lo
+  CC       liblzma_la-filter_common.lo
+  CC       liblzma_la-hardware_physmem.lo
+  CC       liblzma_la-index.lo
+  CC       liblzma_la-stream_flags_common.lo
+  CC       liblzma_la-vli_size.lo
+  CC       liblzma_la-hardware_cputhreads.lo
+  CC       liblzma_la-alone_encoder.lo
+  CC       liblzma_la-block_buffer_encoder.lo
+  CC       liblzma_la-block_encoder.lo
+  CC       liblzma_la-block_header_encoder.lo
+  CC       liblzma_la-easy_buffer_encoder.lo
+  CC       liblzma_la-easy_encoder.lo
+  CC       liblzma_la-easy_encoder_memusage.lo
+  CC       liblzma_la-filter_buffer_encoder.lo
+  CC       liblzma_la-filter_encoder.lo
+  CC       liblzma_la-filter_flags_encoder.lo
+  CC       liblzma_la-index_encoder.lo
+  CC       liblzma_la-stream_buffer_encoder.lo
+  CC       liblzma_la-stream_encoder.lo
+  CC       liblzma_la-stream_flags_encoder.lo
+  CC       liblzma_la-vli_encoder.lo
+  CC       liblzma_la-outqueue.lo
+  CC       liblzma_la-stream_encoder_mt.lo
+  CC       liblzma_la-alone_decoder.lo
+  CC       liblzma_la-auto_decoder.lo
+  CC       liblzma_la-block_buffer_decoder.lo
+  CC       liblzma_la-block_decoder.lo
+  CC       liblzma_la-block_header_decoder.lo
+  CC       liblzma_la-easy_decoder_memusage.lo
+  CC       liblzma_la-filter_buffer_decoder.lo
+  CC       liblzma_la-filter_decoder.lo
+  CC       liblzma_la-filter_flags_decoder.lo
+  CC       liblzma_la-index_decoder.lo
+  CC       liblzma_la-index_hash.lo
+  CC       liblzma_la-stream_buffer_decoder.lo
+  CC       liblzma_la-stream_decoder.lo
+  CC       liblzma_la-stream_flags_decoder.lo
+  CC       liblzma_la-vli_decoder.lo
+  CC       liblzma_la-check.lo
+  CC       liblzma_la-crc32_table.lo
+  CC       liblzma_la-crc32_fast.lo
+  CC       liblzma_la-crc64_table.lo
+  CC       liblzma_la-crc64_fast.lo
+  CC       liblzma_la-sha256.lo
+  CC       liblzma_la-lz_encoder.lo
+  CC       liblzma_la-lz_encoder_mf.lo
+  CC       liblzma_la-lz_decoder.lo
+  CC       liblzma_la-lzma_encoder_presets.lo
+  CC       liblzma_la-lzma_encoder.lo
+  CC       liblzma_la-lzma_encoder_optimum_fast.lo
+  CC       liblzma_la-lzma_encoder_optimum_normal.lo
+  CC       liblzma_la-fastpos_table.lo
+  CC       liblzma_la-lzma_decoder.lo
+  CC       liblzma_la-lzma2_encoder.lo
+  CC       liblzma_la-lzma2_decoder.lo
+  CC       liblzma_la-price_table.lo
+  CC       liblzma_la-delta_common.lo
+  CC       liblzma_la-delta_encoder.lo
+  CC       liblzma_la-delta_decoder.lo
+  CC       liblzma_la-simple_coder.lo
+  CC       liblzma_la-simple_encoder.lo
+  CC       liblzma_la-simple_decoder.lo
+  CC       liblzma_la-x86.lo
+  CC       liblzma_la-powerpc.lo
+  CC       liblzma_la-ia64.lo
+  CC       liblzma_la-arm.lo
+  CC       liblzma_la-armthumb.lo
+  CC       liblzma_la-sparc.lo
+  CCLD     liblzma.la
+  PC       liblzma.pc
+make[2]: ディレクトリ `/tmp/RtmpV1LzAm/R.INSTALL15d9735ccffd/gdsfmt/src/XZ/xz-5.2.5/src/liblzma' から出ます
+make[1]: ディレクトリ `/tmp/RtmpV1LzAm/R.INSTALL15d9735ccffd/gdsfmt/src/XZ/xz-5.2.5/src/liblzma' から出ます
+cp XZ/xz-5.2.5/src/liblzma/.libs/liblzma.a  .
+rm -rf XZ/xz-5.2.5/dos
+rm -rf XZ/xz-5.2.5/po
+g++ -std=gnu++11 -shared -L/usr/local/lib64 -o gdsfmt.so R_CoreArray.o gdsfmt.o digest.o CoreArray/CoreArray.o CoreArray/dAllocator.o CoreArray/dAny.o CoreArray/dBase.o CoreArray/dBitGDS.o CoreArray/dEndian.o CoreArray/dFile.o CoreArray/dParallel.o CoreArray/dParallel_Ext.o CoreArray/dPlatform.o CoreArray/dRealGDS.o CoreArray/dSerial.o CoreArray/dStrGDS.o CoreArray/dStream.o CoreArray/dStruct.o CoreArray/dVLIntGDS.o CoreArray/dSparse.o ZLIB/adler32.o ZLIB/compress.o ZLIB/crc32.o ZLIB/deflate.o ZLIB/infback.o ZLIB/inffast.o ZLIB/inflate.o ZLIB/inftrees.o ZLIB/trees.o ZLIB/uncompr.o ZLIB/zutil.o LZ4/lz4.o LZ4/lz4hc.o LZ4/lz4frame.o LZ4/xxhash.o ./liblzma.a -lpthread
+installing to /usr/local/pkg/R/4.1.0_1/lib64/R/library/00LOCK-gdsfmt/00new/gdsfmt/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (gdsfmt)
+* installing *source* package ‘BiocVersion’ ...
+** using staged installation
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (BiocVersion)
+* installing *source* package ‘SNPRelate’ ...
+** using staged installation
+** libs
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -I. -I'/usr/local/pkg/R/4.1.0_1/lib64/R/library/gdsfmt/include' -I/usr/local/include   -fpic  -g -O2  -c ConvToGDS.cpp -o ConvToGDS.o
+gcc -std=gnu99 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -I. -I'/usr/local/pkg/R/4.1.0_1/lib64/R/library/gdsfmt/include' -I/usr/local/include   -fpic  -g -O2  -c R_SNPRelate.c -o R_SNPRelate.o
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -I. -I'/usr/local/pkg/R/4.1.0_1/lib64/R/library/gdsfmt/include' -I/usr/local/include   -fpic  -g -O2  -c SNPRelate.cpp -o SNPRelate.o
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -I. -I'/usr/local/pkg/R/4.1.0_1/lib64/R/library/gdsfmt/include' -I/usr/local/include   -fpic  -g -O2  -c ThreadPool.cpp -o ThreadPool.o
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -I. -I'/usr/local/pkg/R/4.1.0_1/lib64/R/library/gdsfmt/include' -I/usr/local/include   -fpic  -g -O2  -c dGenGWAS.cpp -o dGenGWAS.o
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -I. -I'/usr/local/pkg/R/4.1.0_1/lib64/R/library/gdsfmt/include' -I/usr/local/include   -fpic  -g -O2  -c dVect.cpp -o dVect.o
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -I. -I'/usr/local/pkg/R/4.1.0_1/lib64/R/library/gdsfmt/include' -I/usr/local/include   -fpic  -g -O2  -c genBeta.cpp -o genBeta.o
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -I. -I'/usr/local/pkg/R/4.1.0_1/lib64/R/library/gdsfmt/include' -I/usr/local/include   -fpic  -g -O2  -c genEIGMIX.cpp -o genEIGMIX.o
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -I. -I'/usr/local/pkg/R/4.1.0_1/lib64/R/library/gdsfmt/include' -I/usr/local/include   -fpic  -g -O2  -c genFst.cpp -o genFst.o
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -I. -I'/usr/local/pkg/R/4.1.0_1/lib64/R/library/gdsfmt/include' -I/usr/local/include   -fpic  -g -O2  -c genHWE.cpp -o genHWE.o
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -I. -I'/usr/local/pkg/R/4.1.0_1/lib64/R/library/gdsfmt/include' -I/usr/local/include   -fpic  -g -O2  -c genIBD.cpp -o genIBD.o
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -I. -I'/usr/local/pkg/R/4.1.0_1/lib64/R/library/gdsfmt/include' -I/usr/local/include   -fpic  -g -O2  -c genIBS.cpp -o genIBS.o
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -I. -I'/usr/local/pkg/R/4.1.0_1/lib64/R/library/gdsfmt/include' -I/usr/local/include   -fpic  -g -O2  -c genKING.cpp -o genKING.o
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -I. -I'/usr/local/pkg/R/4.1.0_1/lib64/R/library/gdsfmt/include' -I/usr/local/include   -fpic  -g -O2  -c genLD.cpp -o genLD.o
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -I. -I'/usr/local/pkg/R/4.1.0_1/lib64/R/library/gdsfmt/include' -I/usr/local/include   -fpic  -g -O2  -c genPCA.cpp -o genPCA.o
+g++ -std=gnu++11 -I"/usr/local/pkg/R/4.1.0_1/lib64/R/include" -DNDEBUG -DUSING_R -I. -I'/usr/local/pkg/R/4.1.0_1/lib64/R/library/gdsfmt/include' -I/usr/local/include   -fpic  -g -O2  -c genSlideWin.cpp -o genSlideWin.o
+g++ -std=gnu++11 -shared -L/usr/local/lib64 -o SNPRelate.so ConvToGDS.o R_SNPRelate.o SNPRelate.o ThreadPool.o dGenGWAS.o dVect.o genBeta.o genEIGMIX.o genFst.o genHWE.o genIBD.o genIBS.o genKING.o genLD.o genPCA.o genSlideWin.o -lpthread -L/usr/local/pkg/R/4.1.0_1/lib64/R/lib -lRlapack -L/usr/local/pkg/R/4.1.0_1/lib64/R/lib -lRblas -lgfortran -lm -lquadmath
+installing to /usr/local/pkg/R/4.1.0_1/lib64/R/library/00LOCK-SNPRelate/00new/SNPRelate/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (SNPRelate)
+
+The downloaded source packages are in
+	‘/tmp/Rtmpg7VRpy/downloaded_packages’
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+Old packages: 'AzureContainers', 'Biostatistics', 'DataEditR', 'IsoplotR',
+  'IsoplotRgui', 'LaplacesDemon', 'LindleyPowerSeries', 'MVar', 'MVar.pt',
+  'RBMRB', 'RPtests', 'Rwave', 'bigsparser', 'bssm', 'cache', 'ch', 'covatest',
+  'deepdive', 'drat', 'ggheatmap', 'interacCircos', 'isotree', 'keys', 'mase',
+  'maxnet', 'mexhaz', 'miceFast', 'mplot', 'od', 'pedSimulate', 'phonics',
+  'polyMatrix', 'popsom', 'proteomics', 'r2dii.analysis', 'r2dii.data',
+  'rstac', 'sensitivity', 'shinysurveys', 'sjPlot', 'spatPomp', 'textrecipes',
+  'yorkr'
+Update all/some/none? [a/s/n]: n
+> packageVersion("SNPRelate")
+[1] ‘1.26.0’
+> 

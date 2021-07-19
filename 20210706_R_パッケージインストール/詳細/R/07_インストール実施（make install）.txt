@@ -1,0 +1,108 @@
+07_インストール実施（make install）
+
+[root@localhost R-4.1.0]# 
+[root@localhost R-4.1.0]# make install
+mkdir -p -- /usr/local/pkg/R/4.1.0_1/lib64/R
+make[1]: ディレクトリ `/home/work/R-4.1.0/m4' に入ります
+make[1]: `install' に対して行うべき事はありません.
+make[1]: ディレクトリ `/home/work/R-4.1.0/m4' から出ます
+make[1]: ディレクトリ `/home/work/R-4.1.0/tools' に入ります
+make[1]: `install' に対して行うべき事はありません.
+make[1]: ディレクトリ `/home/work/R-4.1.0/tools' から出ます
+make[1]: ディレクトリ `/home/work/R-4.1.0/doc' に入ります
+installing doc ...
+mkdir -p -- /usr/local/pkg/R/4.1.0_1/lib64/R/doc
+mkdir -p -- /usr/local/pkg/R/4.1.0_1/share/man/man1
+make[2]: ディレクトリ `/home/work/R-4.1.0/doc/html' に入ります
+installing doc/html ...
+mkdir -p -- /usr/local/pkg/R/4.1.0_1/lib64/R/doc/html
+make[2]: ディレクトリ `/home/work/R-4.1.0/doc/html' から出ます
+make[2]: ディレクトリ `/home/work/R-4.1.0/doc/manual' に入ります
+installing doc/manual ...
+mkdir -p -- /usr/local/pkg/R/4.1.0_1/lib64/R/doc/manual
+mkdir -p -- /usr/local/pkg/R/4.1.0_1/lib64/R/doc/manual/images
+make[2]: ディレクトリ `/home/work/R-4.1.0/doc/manual' から出ます
+make[1]: ディレクトリ `/home/work/R-4.1.0/doc' から出ます
+make[1]: ディレクトリ `/home/work/R-4.1.0/etc' に入ります
+mkdir -p -- /usr/local/pkg/R/4.1.0_1/lib64/R/etc
+installing etc ...
+make[1]: ディレクトリ `/home/work/R-4.1.0/etc' から出ます
+make[1]: ディレクトリ `/home/work/R-4.1.0/share' に入ります
+installing share ...
+mkdir -p -- /usr/local/pkg/R/4.1.0_1/lib64/R/share
+mkdir -p -- /usr/local/pkg/R/4.1.0_1/lib64/R/share/R
+mkdir -p -- /usr/local/pkg/R/4.1.0_1/lib64/R/share/dictionaries
+mkdir -p -- /usr/local/pkg/R/4.1.0_1/lib64/R/share/encodings
+mkdir -p -- /usr/local/pkg/R/4.1.0_1/lib64/R/share/java
+mkdir -p -- /usr/local/pkg/R/4.1.0_1/lib64/R/share/licenses
+mkdir -p -- /usr/local/pkg/R/4.1.0_1/lib64/R/share/make
+mkdir -p -- /usr/local/pkg/R/4.1.0_1/lib64/R/share/Rd
+mkdir -p -- /usr/local/pkg/R/4.1.0_1/lib64/R/share/Rd/macros
+mkdir -p -- /usr/local/pkg/R/4.1.0_1/lib64/R/share/sh
+mkdir -p -- /usr/local/pkg/R/4.1.0_1/lib64/R/share/texmf
+mkdir -p -- /usr/local/pkg/R/4.1.0_1/lib64/R/share/texmf/bibtex/bib
+mkdir -p -- /usr/local/pkg/R/4.1.0_1/lib64/R/share/texmf/bibtex/bst
+mkdir -p -- /usr/local/pkg/R/4.1.0_1/lib64/R/share/texmf/tex/latex
+make[1]: ディレクトリ `/home/work/R-4.1.0/share' から出ます
+make[1]: ディレクトリ `/home/work/R-4.1.0/src' に入ります
+make[2]: ディレクトリ `/home/work/R-4.1.0/src/scripts' に入ります
+mkdir -p -- /usr/local/pkg/R/4.1.0_1/bin
+mkdir -p -- /usr/local/pkg/R/4.1.0_1/lib64/R/bin
+make[2]: ディレクトリ `/home/work/R-4.1.0/src/scripts' から出ます
+make[2]: ディレクトリ `/home/work/R-4.1.0/src/include' に入ります
+mkdir -p -- /usr/local/pkg/R/4.1.0_1/lib64/R/include
+make[3]: ディレクトリ `/home/work/R-4.1.0/src/include/R_ext' に入ります
+mkdir -p -- /usr/local/pkg/R/4.1.0_1/lib64/R/include/R_ext
+make[3]: ディレクトリ `/home/work/R-4.1.0/src/include/R_ext' から出ます
+make[2]: ディレクトリ `/home/work/R-4.1.0/src/include' から出ます
+make[2]: ディレクトリ `/home/work/R-4.1.0/src/extra' に入ります
+make[3]: ディレクトリ `/home/work/R-4.1.0/src/extra/blas' に入ります
+mkdir -p -- /usr/local/pkg/R/4.1.0_1/lib64/R/lib
+make[3]: ディレクトリ `/home/work/R-4.1.0/src/extra/blas' から出ます
+make[3]: ディレクトリ `/home/work/R-4.1.0/src/extra/tre' に入ります
+make[3]: `install' に対して行うべき事はありません.
+make[3]: ディレクトリ `/home/work/R-4.1.0/src/extra/tre' から出ます
+make[3]: ディレクトリ `/home/work/R-4.1.0/src/extra/tzone' に入ります
+make[3]: `install' に対して行うべき事はありません.
+make[3]: ディレクトリ `/home/work/R-4.1.0/src/extra/tzone' から出ます
+make[3]: ディレクトリ `/home/work/R-4.1.0/src/extra/xdr' に入ります
+make[3]: `install' に対して行うべき事はありません.
+make[3]: ディレクトリ `/home/work/R-4.1.0/src/extra/xdr' から出ます
+make[3]: ディレクトリ `/home/work/R-4.1.0/src/extra/intl' に入ります
+make[3]: `install' に対して行うべき事はありません.
+make[3]: ディレクトリ `/home/work/R-4.1.0/src/extra/intl' から出ます
+make[2]: ディレクトリ `/home/work/R-4.1.0/src/extra' から出ます
+make[2]: ディレクトリ `/home/work/R-4.1.0/src/appl' に入ります
+make[2]: `install' に対して行うべき事はありません.
+make[2]: ディレクトリ `/home/work/R-4.1.0/src/appl' から出ます
+make[2]: ディレクトリ `/home/work/R-4.1.0/src/nmath' に入ります
+make[2]: `install' に対して行うべき事はありません.
+make[2]: ディレクトリ `/home/work/R-4.1.0/src/nmath' から出ます
+make[2]: ディレクトリ `/home/work/R-4.1.0/src/unix' に入ります
+gcc -std=gnu99 -I. -I../../src/include -I../../src/include  -I/usr/local/include -DHAVE_CONFIG_H    -g -O2  -L/usr/local/lib64 -DR_HOME='"/usr/local/pkg/R/4.1.0_1/lib64/R"' \
+  -o Rscript ./Rscript.c
+make[2]: ディレクトリ `/home/work/R-4.1.0/src/unix' から出ます
+make[2]: ディレクトリ `/home/work/R-4.1.0/src/main' に入ります
+mkdir -p -- /usr/local/pkg/R/4.1.0_1/lib64/R/bin/exec
+make[3]: ディレクトリ `/home/work/R-4.1.0/src/main' に入ります
+make[3]: ディレクトリ `/home/work/R-4.1.0/src/main' から出ます
+make[2]: ディレクトリ `/home/work/R-4.1.0/src/main' から出ます
+make[2]: ディレクトリ `/home/work/R-4.1.0/src/modules' に入ります
+make[3]: ディレクトリ `/home/work/R-4.1.0/src/modules/internet' に入ります
+mkdir -p -- /usr/local/pkg/R/4.1.0_1/lib64/R/modules
+make[3]: ディレクトリ `/home/work/R-4.1.0/src/modules/internet' から出ます
+make[3]: ディレクトリ `/home/work/R-4.1.0/src/modules/lapack' に入ります
+make[3]: ディレクトリ `/home/work/R-4.1.0/src/modules/lapack' から出ます
+make[3]: ディレクトリ `/home/work/R-4.1.0/src/modules/X11' に入ります
+make[3]: ディレクトリ `/home/work/R-4.1.0/src/modules/X11' から出ます
+make[2]: ディレクトリ `/home/work/R-4.1.0/src/modules' から出ます
+make[2]: ディレクトリ `/home/work/R-4.1.0/src/library' に入ります
+mkdir -p -- /usr/local/pkg/R/4.1.0_1/lib64/R/library
+installing packages ...
+  building HTML index ...
+make[2]: ディレクトリ `/home/work/R-4.1.0/src/library' から出ます
+make[1]: ディレクトリ `/home/work/R-4.1.0/src' から出ます
+make[1]: ディレクトリ `/home/work/R-4.1.0/tests' に入ります
+make[1]: `install' に対して行うべき事はありません.
+make[1]: ディレクトリ `/home/work/R-4.1.0/tests' から出ます
+[root@localhost R-4.1.0]# 

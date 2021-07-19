@@ -1,0 +1,164 @@
+drwxr-xr-x.  5 root root        43  7月  6 13:53 4.1.0_1
+drwxr-xr-x. 15  501 games     4096  7月  6 13:41 R-4.1.0
+-rw-r--r--.  1 root root  33714683  5月 18 16:05 R-4.1.0.tar.gz
+[root@localhost R]# cd 4.1.0_1/
+[root@localhost 4.1.0_1]# ll
+合計 0
+drwxr-xr-x. 2 root root 30  7月  6 13:53 bin
+drwxr-xr-x. 3 root root 15  7月  6 13:53 lib64
+drwxr-xr-x. 3 root root 17  7月  6 13:53 share
+[root@localhost 4.1.0_1]# cd bin/
+[root@localhost bin]# ll
+合計 40
+-rwxr-xr-x. 1 root root  9146  7月  6 13:53 R
+-rwxr-xr-x. 1 root root 24968  7月  6 13:53 Rscript
+[root@localhost bin]# pwd
+/usr/local/pkg/R/4.1.0_1/bin
+[root@localhost bin]# cd
+[root@localhost ~]# /usr/local/pkg/R/4.1.0_1/bin/R
+
+R version 4.1.0 (2021-05-18) -- "Camp Pontanezen"
+Copyright (C) 2021 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R は、自由なソフトウェアであり、「完全に無保証」です。 
+一定の条件に従えば、自由にこれを再配布することができます。 
+配布条件の詳細に関しては、'license()' あるいは 'licence()' と入力してください。 
+
+R は多くの貢献者による共同プロジェクトです。 
+詳しくは 'contributors()' と入力してください。 
+また、R や R のパッケージを出版物で引用する際の形式については 
+'citation()' と入力してください。 
+
+'demo()' と入力すればデモをみることができます。 
+'help()' とすればオンラインヘルプが出ます。 
+'help.start()' で HTML ブラウザによるヘルプがみられます。 
+'q()' と入力すれば R を終了します。 
+
+> 
+> install.packages("BiocManager", dependencies = TRUE)
+ --- このセッションで使うために、CRAN のミラーサイトを選んでください --- 
+Secure CRAN mirrors 
+
+ 1: 0-Cloud [https]
+ 2: Australia (Canberra) [https]
+ 3: Australia (Melbourne 1) [https]
+ 4: Australia (Melbourne 2) [https]
+ 5: Australia (Perth) [https]
+ 6: Austria [https]
+ 7: Belgium (Brussels) [https]
+ 8: Brazil (BA) [https]
+ 9: Brazil (PR) [https]
+10: Brazil (RJ) [https]
+11: Brazil (SP 1) [https]
+12: Brazil (SP 2) [https]
+13: Bulgaria [https]
+14: Canada (MB) [https]
+15: Canada (ON 2) [https]
+16: Chile (Santiago) [https]
+17: China (Beijing 2) [https]
+18: China (Hefei) [https]
+19: China (Hong Kong) [https]
+20: China (Guangzhou) [https]
+21: China (Lanzhou) [https]
+22: China (Nanjing) [https]
+23: China (Shanghai 1) [https]
+24: China (Shanghai 2) [https]
+25: China (Shenzhen) [https]
+26: Costa Rica [https]
+27: Czech Republic [https]
+28: Denmark [https]
+29: East Asia [https]
+30: Ecuador (Cuenca) [https]
+31: Ecuador (Quito) [https]
+32: Estonia [https]
+33: France (Lyon 1) [https]
+34: France (Lyon 2) [https]
+35: France (Marseille) [https]
+36: France (Montpellier) [https]
+37: Germany (Erlangen) [https]
+38: Germany (Leipzig) [https]
+39: Germany (Göttingen) [https]
+40: Germany (Münster) [https]
+41: Germany (Regensburg) [https]
+42: Greece [https]
+43: Hungary [https]
+44: Iceland [https]
+45: India [https]
+46: Indonesia (Jakarta) [https]
+47: Iran [https]
+48: Italy (Milano) [https]
+49: Italy (Padua) [https]
+50: Japan (Tokyo) [https]
+51: Korea (Gyeongsan-si) [https]
+52: Korea (Seoul 1) [https]
+53: Korea (Ulsan) [https]
+54: Malaysia [https]
+55: Mexico (Mexico City) [https]
+56: Mexico (Texcoco) [https]
+57: Morocco [https]
+58: Netherlands [https]
+59: New Zealand [https]
+60: Norway [https]
+61: Philippines [https]
+62: Russia (Moscow) [https]
+63: South Africa (Johannesburg) [https]
+64: Spain (A Coruña) [https]
+65: Spain (Madrid) [https]
+66: Sweden (Borås) [https]
+67: Sweden (Umeå) [https]
+68: Switzerland [https]
+69: Taiwan (Taipei) [https]
+70: Turkey (Denizli) [https]
+71: Turkey (Istanbul) [https]
+72: Turkey (Mersin) [https]
+73: UK (Bristol) [https]
+74: UK (London 1) [https]
+75: USA (IA) [https]
+76: USA (KS) [https]
+77: USA (MI) [https]
+78: USA (OH) [https]
+79: USA (OR) [https]
+80: USA (TN) [https]
+81: USA (TX 1) [https]
+82: Uruguay [https]
+83: (other mirrors)
+
+Selection: 
+50
+
+｜
+｜
+｜
+｜
+
+** testing if installed package keeps a record of temporary installation path
+* DONE (testthat)
+
+The downloaded source packages are in
+	‘/tmp/RtmprbCyVG/downloaded_packages’
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+> 
+
+★BiocManagerは個別で必要だったからここまでは良しとし
+　以下パッケージ全部入れる。
+　追加パッケージをなんでもかんでも追加する
+http://www.okadajp.org/RWiki/?%E8%BF%BD%E5%8A%A0%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%82%92%E3%81%AA%E3%82%93%E3%81%A7%E3%82%82%E3%81%8B%E3%82%93%E3%81%A7%E3%82%82%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B
+※筑波大学の国内ミラーは死んでるので以下参照で要変更
+https://staffblog.amelieff.jp/entry/2018/04/19/152233
+
+## 1. CRANから一覧を入手
+packs <- available.packages(contriburl=contrib.url("http://cran.ism.ac.jp/"))
+
+# 2. 一覧をもとにダウンロードとインストール
+install.packages(packs[,1],contriburl=contrib.url("http://cran.ism.ac.jp/"))
+
+
+★インストールされたパッケージの確認
+インストールされたパッケージを確認したりすることができる。
+
+library()	インストールされいてるライブラリー一覧を表示
+library(X)	Xというライブラリーを読み込み、その機能を使えるようにします
+search()	libraryで呼び出されているライブラリー
+help(package="X")	Xというパッケージのバージョンや著者などを確認できます
